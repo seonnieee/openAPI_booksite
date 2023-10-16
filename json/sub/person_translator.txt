@@ -1,0 +1,16 @@
+<div class="person_content_box_title">
+	<h3>번역<span>박선령</span></h3>
+	<button><img src="img/sub/person/icon1.png"></button>
+</div>
+
+<div class="person_content_tag_box">
+	<button><a href="#">번역가/통역사>영어</a></button>
+</div>
+
+<div class="person_content_box">
+	<p class="person_content" id="person_content2">
+세종대학교 영어영문학과를 졸업하고 MBC방송문화원 영상번역과정을 수료했다. 현재 출판번역 에이전시 베네트랜스에서 전속 번역가로 활동 중이다.
+	<br>
+옮긴 책으로는 『타이탄의 도구들』 『지금 하지 않으면 언제 하겠는가』 『하루 한 장 마음챙김 긍정 확언 필사집』 『최고의 팀은 무엇이 다른가』 『억만장자 시크릿』 『북유럽 신화』 『똑똑하게 생존하기』 등이 있다..
+	</p>
+</div>

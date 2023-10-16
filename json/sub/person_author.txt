@@ -1,0 +1,27 @@
+<div class="person_content_box_title">
+<h3>저자(글)<span>에릭 토머스</span></h3>
+<button><img src="img/sub/person/icon1.png"></button>
+</div>                                        
+
+<div class="person_content_tag_box">
+<button><a href="#">자기계발/리더십컨설턴트</a></button>
+</div>
+
+<div class="person_content_box">
+<p class="person_content" id="person_content1">
+ Eric Thomas
+<br>
+제너럴일렉트릭(GE), AT&T, 나이키, 언더아머 등 ‘포춘(Fortune) 500대 기업’ CEO는 물론, MLB, NBA, NFL 등 미국 프로스포츠 업계와 스타 플레이어가 가장 선호하는 자기계발 분야 최고의 강연자가 바로 에릭 토머스다.
+<br>
+그는 아버지가 누군지도 모른 채 가난하게 살면서 제대로 교육받지도 못했고 노숙자로 살기도 했지만, 자신이 처한 어려운 환경에서도 좌절하지 않고 수많은 장애물을 이겨내며 인생 역전에 성공했다. 특히 흑인은 성공할 수 없다는 업계의 통념을 깨고, 브라이언 트레이시, 웨인 다이어, 밥 프록터, 스티븐 코비의 뒤를 잇는 최고의 강사로 평가받고 있다.
+<br>
+직설적인 화법과 열성적인 제스처 등 불같은 열정으로 가득 찬 그의 연설은, 듣는 순간 청중의 마음을 휘어잡는 것으로 유명하며 우리나라에서도 그의 강연 영상이 여러 곳에서 회자되면서 ‘동기부여 영상 레전드’로 손꼽히고 있다. 오늘도 전세계 수백 개국의 수백만 명의 사람들이 그의 유튜브 채널과 SNS를 방문해 ‘당신의 영상을 보고 잃어버린 마음의 추진력을 되찾았다.’는 인증 댓글을 올리고 있다.
+<br>
+<br>
+홈페이지 https://www.ericthomas.com/
+<br>
+인스타그램 www.instagram.com/etthehiphoppreacher/
+<br>
+유튜브 www.youtube.com/@etthehiphoppreacher
+</p>
+</div>

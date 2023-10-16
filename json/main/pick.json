@@ -1,0 +1,25 @@
+[{
+    "url":"img1.png",
+    "title":"종합추천",
+    "desc_f":"고객님의 취향을 분석해",
+    "desc_s":"이틀밤낮 고민하여",
+    "desc_t":"고른 책을 확인하세요."
+},{
+    "url":"img2.png",
+    "title":"작가 Picks",
+    "desc_f":"픽스를 통해 고객님의",
+    "desc_s":"선호 작가와 비슷한",
+    "desc_t":"새로운 작가를 만나보세요!"
+},{
+    "url":"img3.png",
+    "title":"내 마음대로 Picks",
+    "desc_f":"오늘은",
+    "desc_s":"내 맘대로 이 책 한 권",
+    "desc_t":"어때요?"
+},{
+    "url":"img4.png",
+    "title":"소울메이트 Picks",
+    "desc_f":"고객님과 취향이 비슷한",
+    "desc_s":"소울메이트들은",
+    "desc_t":"어떤 책을 읽고 있을까요?"
+}]

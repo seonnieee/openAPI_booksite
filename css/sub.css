@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/******sub css 시작******/
+#section_wrap{width:100%; height:auto; margin:0 auto; position:relative;}
+/*우측 flying메뉴*/
+#flying_banner_wrap{width:100px; height:390px; margin:0 auto; position:absolute; top:380px; right:20px; z-index:100}
+#flying_banner_inner{width:100px; height:410px; display:flex; flex-direction:column;}
+#flying_banner_first{width:85px; height:120px; border-radius:10px; overflow:hidden;}
+#fiying_banner_first{width:85px; height:120px;}
+#flying_content{width:100px; height:340px; border-radius:10px; border:1px solid#d5d5d5; background-color:#fff; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+#flying_banner_second{width:85px; height:200px;}
+.flying_event_wrap{width:100%; height:15px; padding:15px 0px; display:flex; align-items:center; justify-content:space-between;}
+.flying_event_wrap:last-child{margin-top:10px;}
+.flying_event_wrap > span{font-size:12px;}
+.flying_event_wrap > span > a{text-decoration:none; color:#595959;}
+.flying_event_wrap > span > a:hover{text-decoration:underline;}
+.flying_event_wrap > span > a > img{width:7px; height:7px;}
+#flying_img_wrap{width:85px; height:85px; border-radius:10px; overflow:hidden;}
+#flying_img_box{width:85px; height:85px; position:relative;}
+#flying_img_box > li{position:absolute;}
+#flying_img_box > li:not(:first-child){display:none;}
+#flying_img_box > li > a > img{width:85px; height:85px;}
+#flying_control_box{width:100%; height:20px; display:flex; justify-content:space-between; align-items:center;}
+#flying_control_box > #flying_page{color:#000}
+#flying_control_box > span{font-size:12px; margin-top:3px; color:#595959;}
+#flying_control_box > button{cursor:pointer; border:none; background:none; width:16px; height:16px;}
+#flying_control_box > button > img{width:6px; height:10px;}
+#flying_control_box > button:first-child > img{transform:rotate(180deg)}
+#flying_up{width:100%; height:fit-content; display:flex; justify-content:center; margin-top:20px;}
+#flying_btn > a{width:50px; height:50px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:12px; color:#595959; background-color:#fff; border:1px solid#ccc; box-sizing:border-box; box-shadow:0px 5px 10px 0px rgba(0,0,0,0.1); border-radius:100%; cursor:pointer;}
+#flying_btn > a{text-decoration:none; color:#595959;}
+#flying_btn > a > span{display:block; margin-top:10px;}
+#flying_btn_img{width:9px; height:5px;} 
+#flying_btn_img > img{width:100%; height:100%;}
+/*상단 북 메인 이미지 섹션까지 묶음*/
+#book_header_wrap{width:100%; height:fit-content; padding-bottom:50px; margin:0 auto;}
+/*내용 section 상단 도서 카테고리 필터*/
+#category_nav_wrap{width:100%; height:fit-content; padding-top:20px; margin:0 auto;}
+#category_nav_inner{width:1200px; height:30px; margin:0 auto;}
+#category_nav_box{ width:100%; height:100%; margin:0 auto; color:#767676;  font-size:13px; display:flex; align-items:center; justify-content:flex-start;}
+.category_nav_list{width:fit-content; height:100%;  margin-right:10px; position:relative;}
+.category_nav_list > a{display:flex; align-content:center; text-decoration:none; height:100%; color:#767676}
+.category_nav_list > a > img{width:14px; height:13px;}
+.category_nav_list > a > span{font-size:13px; line-height:19px;}
+.category_more{width:16px; height:16px; position:relative; margin-left:3px;}
+.category_more > img{width:100%; height:100%;}
+.category_up{position:absolute; top:0; left:0; display:none;}
+.category_sub_wrap{display:none; position:absolute; width:fit-content; height:fit-content; background-color:#fff; border-radius:10px; border:1px solid#d5d5d5; padding:10px 30px 10px 10px; z-index:2;}
+.category_sub_box{border-right:1px solid#d5d5d5; padding-right:30px;}
+.category_sub_box:last-child{border:none; padding-right:0px;}
+.category_sub_list{width:135px; margin:15px;}
+.category_sub_list > a{text-decoration:none; color:#767676;}
+.category_sub_list > a:hover{text-decoration:underline;}
+/*북 구매정보 페이지*/
+/*상단 책 개별 메인-서브 타이틀*/
+#book_sale_wrap{width:100%; height:920px; padding-top:50px; margin:0 auto;}
+.book_sale_box{width:1200px; height:920px; margin:0 auto;}
+#book_sale_title_area{ width:100%; height:70px; margin:0 auto; position:relative;}
+#book_sale_main_title{width:100%; height:42px; font-size:28px; font-weight:bold; display:flex; align-items:center; justify-content:center;}
+#book_sale_share{width:42px; height:42px; position:absolute; top:0; right:0px;}
+#book_sale_share > button{width:100%; height:100%; background-color:#fff; border-radius:100%; border:1px solid#ccc; display:flex; align-items:center; justify-content:center; cursor:pointer;}
+#book_sale_share > button > img{width:14px; height:14px;}
+#book_sale_sub_title{width:100%; height:28px; display:flex; align-items:center; justify-content:center; font-size:16px; color:#595959;}
+/*책 개별 컨텐츠 좌측:도서 이미지, 우측:구매 정보*/
+#book_sale_content_area{width:100%; height:830px; padding-top:20px; display:flex; justify-content:space-between;}
+/*좌측 도서 메인 커버 이미지(대형 이미지)*/    
+#book_sale_content_left{width:50%; height:100%; display:flex; flex-direction:column; justify-content:flex-start; align-items:center;}
+#book_sale_cover_wrap{transform-style:preserve-3d; perspective:1000px; margin-top:50px; width:460px; height:fit-content;}
+#book_sale_content_cover{width:460px; height:680px; position:relative; transition:0.5s; transform-style:preserve-3d; cursor:url('./img/sub/booksale/cursor.svg'), pointer; box-shadow:20px 20px 20px rgba(0,0,0,0.2);}
+#book_sale_content_cover::before{content:""; background:url('../img/sub/booksale/img2.jpg'); background-position:center; background-size:cover; position:absolute; top:0; left:0; width:60px; height:100%; transform-origin:left; transform:rotateY(90deg)}
+#book_sale_content_cover::after{content:""; background:url('../img/sub/booksale/img3.jpg'); background-position:center; background-size:cover; position:absolute; top:0; left:0; width:100%; height:100%; transform-origin:center; transform:rotateY(180deg) translateZ(50px);}
+#book_sale_content_cover > img{width:100%; height:100%; position:absolute; top:0; left:0; object-fit:cover;}
+#book_sale_pre{margin-top:25px;}
+#book_sale_pre > button{width:auto; height:35px; padding-left:12px; padding-right:13px; background:#fff; border-radius:30px; border:1px solid#ccc; transition:0.3s ease-in}                                              
+#book_sale_pre > button:hover{background:#eaeaea;}
+#book_sale_pre > button > img{size:12px; height:12px; margin:0px 3px;}
+#book_sale_pre > button > span{font-size:12px;}
+/*좌측 도서 메인 상세 정보*/   
+#book_sale_content_right{width:45%; height:100%;}
+#book_sale_info{width:100%; height:fit-content; margin-top:40px;}
+#book_author_info{width:100%; height:auto;}
+#book_author_info > span{font-size:17px; font-weight:bold; color:#000;}
+#book_des_info{width:100%; height:auto; margin-top:10px;}
+#book_des_info > span{font-size:15px; color:#767676;}
+#book_sale_rank{width:100%; height:22px; display:flex; align-items:center; margin-top:25px; position:relative;}
+#book_sale_rank > p{font-size:16px; font-weight:bold; width:fit-content; color:#000; margin-left:25px; margin-right:10px;}
+#book_sale_rank > p::before{content:""; width:22px; height:20px; background:url('../img/sub/booksale/icon4.png'); background-repeat:no-repeat; background-size:22px 20px; background-position:center; position:absolute; top:0; left:0;}
+#book_sale_rank > span{font-size:14px; height:auto; color:#292929}
+/*리뷰 - 평균 평점 및 주요 코멘트*/
+#book_sale_review_box{border-radius:10px; border:1px solid#eaeaea; background-color:#fff; width:500px; height:150px; overflow:hidden; margin-top:30px; margin-left:20px;}
+#book_sale_review_box > button{width:100%; height:100%; border:none; background:none;}
+#book_sale_review_btn > a{width:100%; height:100%; text-decoration:none; display:flex;}
+/*북 판매페이지 리뷰 박스 왼쪽 별점*/
+#book_sale_review_left{width:50%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+#book_sale_review_score{font-size:22px; color:#4dac27; font-weight:bold; margin-left:25px; position:relative;}
+#book_sale_review_score::before{content:""; background:url('../img/sub/booksale/icon5.png'); width:24px; height:24px; background-size:24px 24px; background-position:center; background-repeat:no-repeat; position:absolute; top:0; left:-30px;}
+#book_sale_star{display:flex; flex-direction:row;}
+#book_sale_star > .star{margin-right:5px; margin-top:10px;}
+#book_sale_star > .star > img{width:18px; height:18px;}
+#book_sale_review_count{font-size:13px; color:#595959; margin-top:10px;}
+/*북 판매페이지 리뷰 박스 오른쪽 코멘트*/
+#book_sale_review_right{width:50%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative;}
+#book_sale_review_right::before{content:""; width:1px; height:60px; position:absolute; top:45px; left:0; background-color:#eaeaea;}
+#book_sale_review_memo{width:22px; height:22px;}
+#book_sale_review_memo > img{width:100%; height:100%;}
+#book_sale_coment{font-size:17px; font-weight:bold; margin-top:10px; color:#474c98;}
+#book_sale_review_coment{font-size:13px; color:#474c98; margin-top:10px;}
+/*판매 금액 및 적립, 배송정보 안내*/
+#book_sale_price_wrap{width:100%; height:360px; padding-top:30px;}
+#book_sale_keyword_box{width:100%; height:30px; display:flex; justify-content:flex-start; align-items:center;}
+#book_sale_keyword_box > span{box-sizing:border-box; border-radius:4px; border:1px solid#ccc; color:#767676; background-color:#fff; padding:3px 5px; margin-right:5px; font-size:14px;}
+#book_sale_keyword_box > span:first-child{box-sizing:border-box; border:1px solid#474c98; color:#474c98;}
+#book_sale_price_box{width:100%; height:35px; margin-top:30px;}
+#book_sale_percent{font-size:25px; font-weight:bold; color:#4dac27; margin-right:5px;}
+#book_sale_price{font-size:25px; color:#000;}
+#book_sale_val{font-weight:bold;}
+#book_sale_unit{margin-left:-5px;}
+#book_price{font-size:15px; color:#767676;}
+#book_sale_price_info_box{width:100%; height:180px; margin-top:20px; border-top:1px solid#eaeaea; border-bottom:1px solid#eaeaea;}
+#book_sale_benefit{width:100%; height:55px; display:flex; align-items:center; border-bottom:1px solid#eaeaea;}
+#book_benefit_box{width:100%; height:25px; display:flex; align-items:center; justify-content:space-between;}
+#book_benefit_title{font-size:16px; color:#000; font-weight:bold;}
+#book_benefit_info{display:flex; align-items:center;}
+#book_benefit{font-size:17px; color:#4dac27; font-weight:bold; margin-right:5px;}
+#book_benefit_more{width:22px; height:22px; position:relative; cursor:pointer;}
+#book_benefit_more > img{width:22px; height:22px; position:absolute; top:0; left:0;}
+#book_benefit_more > #book_benefit_up{display:none;}
+#book_sale_ship{width:100%; height:124px; display:flex; align-items:center;}
+#book_ship_box{width:100%; height:96px;}
+.book_ship_list{width:100%; height:32px;}
+#book_ship_list1{display:flex; align-items:center; justify-content:space-between;}
+#book_ship_title{font-size:16px; color:#000; font-weight:bold;}
+#book_ship_info{display:flex; align-items:center; justify-content:space-between;}
+#book_ship1{font-size:14px; color:#000; margin-right:5px;}
+.book_ship_more{width:16px; height:16px; cursor:pointer;}
+.book_ship_more > img{width:100%; height:100%;}
+#book_ship_list2{display:flex; justify-content:flex-end; align-items:center;}
+#book_ship_info2{display:flex; align-items:center; font-size:14p; font-weight:bold; margin-right:5px;}
+#book_ship_info2 > span{color:#474c98; margin-right:2px;}
+#book_ship_list3{display:flex; justify-content:flex-end; align-items:center;}
+#book_ship_info3{display:flex; align-items:center; font-size:14px;}
+#book_ship_info3 > div > button{border:1px solid#ccc; background:#fff; border-radius:5px; color:#000; display:flex; align-items:center; padding-top:5px; transition:0.3s ease-in;}
+#book_ship_info3 > div > button:hover{background-color:#eaeaea;}
+#book_ship_info3 > div > button > img{width:6px; height:6px; margin-top:-2px;}
+#book_ship2{color:#595959; margin-right:5px;}
+#book_sale_bell{width:100%; height:45px;}
+#book_sale_bell_box{display:flex; justify-content:space-between; align-items:center; margin-top:15px;}
+#book_sale_bell_box > p{font-size:14px; color:#595959; line-height:20px;}
+#book_sale_bell_box > div > button{height:30px; border-radius:5px; border:1px solid#5055b1; color:#474c98; font-size:12px; display:flex; align-items:center; padding-top:2px; transition:0.2s ease-in;}
+#book_sale_bell_box > div > button:hover{cursor:pointer; background-color:#d6d8e9;}
+#book_sale_bell_box > div > button > img{width:12px; height:18px; margin-top:-4px; margin-right:4px;}
+/*매장 위치 및 재고 확인 버튼*/
+#book_sale_stock{width:100%; display:flex; justify-content:center;}
+#book_sale_stock > button{width:100%; height:40px; background-color:#fff; border-radius:5px; border:1px solid#ccc; margin-top:10px; font-size:15px; display:flex; align-items:center; justify-content:center; padding-top:5px; transition:0.2s ease-in;}
+#book_sale_stock > button:hover{cursor:pointer; background-color:#eaeaea;}
+#book_sale_stock > button > img{width:15px; height:20px; margin-top:-5px; margin-right:5px;}
+
+/*북 연관 상세정보(상품정보/리뷰/교환반품규정) 섹션까지 묶음*/
+#book_body_wrap{width:100%; height:fit-content; margin:0 auto;}
+#book_body_nav_wrap{background-color:#fff; width:100%; height:75px; margin:0 auto; border-bottom:1px solid#d5d5d5;}
+#book_body_nav_box{width:1200px; height:100%; margin:0 auto;}
+#book_body_nav{width:100%; height:100%; display:flex;}
+.book_body_nav_list{margin-right:60px; height:100%; display:flex; align-items:center;}
+.book_body_nav_list > a{text-decoration:none; color:#767676; font-size:18px;}
+
+#book_body_detail_upperwrap{width:100%; height:fit-content; margin:0 auto;}
+#book_body_detail_wrap{width:1200px; height:auto; margin:0 auto; display:flex;}
+/*******상세 정보 페이지 왼쪽 디테일 정보(상품정보/리뷰/교환반품규정)******/
+#book_body_detail_left{width:815px; height:auto;}
+/*컨텐츠별 제목 공통 css적용*/
+.book_detail_title_wrap{width:100%; height:30px; padding-bottom:20px; display:flex; justify-content:space-between; align-items:flex-end;}
+.book_detail_title{font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+.book_more > a{text-decoration:none; color:#595959; font-size:13px;}
+.book_more > a:hover > span{text-decoration:underline;}
+.book_more > a > img{width:5px; height:9px;}
+/*함께 구매한 책 컨텐츠*/
+#book_detail_related{width:100%; height:460px; padding-top:70px;}
+.book_detail_content_wrap{width:100%; height:auto; }
+.book_detail_related_content{width:815px; height:380px; box-sizing:border-box; border-radius:20px; background-color:#f7f7f7;  padding:30px 0px 5px 30px; overflow:hidden; position:relative;}
+.swiper{width:815px; height:380px;}
+.book_related_items{width:2100px; height:300px; display:flex; }
+.book_related_item{width:140px; height:300px; display:flex; flex-direction:column;}
+.book_related_imgbox{width:120px; height:170px;}
+.book_related_imgbox > a > img{width:120px; height:170px;}
+.book_related_info{width:120px; height:120px; display:flex; flex-direction:column; justify-content:center;}
+.book_related_info > a{text-decoration:none; color:#000; font-size:15px; font-weight:bold; margin-bottom:10px;}
+.book_related_info > a:hover{text-decoration:underline;}
+.book_related_info > span{font-size:13px; color:#595959; margin-bottom:10px;}
+.book_related_val{font-size:14px; font-weight:bold;}
+.book_related_unit{font-size:14px;}
+.book_related_scroll_box{position:absolute; left:30px; bottom:30px; width:calc(100% - 60px); height:2px; z-index:50; border-radius:2px; background:rgba(0,0,0,0.06)}
+.book_related_scroll_bar{width:280px; height:2px; background-color:#000; border-radius:10px; transform:translate3d(0px,0px, 0px); transition-duration:0ms; position:relative; left:0; top:0;}
+/*키워드Pick 컨텐츠*/
+#book_detail_keyword{width:100%; height:270px; margin-top:70px;}
+#book_keyword_nav_box{width:100%; height:215px;}
+#book_keyword_nav{width:100%; height:45px; display:flex; align-items:center;}
+.book_keyword_list{border-radius:35px; width:auto; height:35px; display:flex; align-items:center; justify-content:center; padding:0px 15px; margin-right:5px; font-size:13px; color:#767676; background-color:#f7f7f7;}
+.book_keyword_list:first-child{background-color:#595959; color:#fff}
+#book_keyword_content_wrap{width:100%; height:170px; position:relative;}
+.book_keyword_content_box{width:100%; height:100%; display:flex; justify-content:space-between;  position:absolute; top:0; left:0;}
+.book_keyword_content_box:not(:first-child){display:none;}
+.book_keyword_content{width:110px; height:100%;}
+.book_keyword_content > a > img{width:105px; height:170px;}
+.book_keyword_content_more{width:80px; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer;}
+.book_keyword_content_more > button{width:25px; height:25px; border-radius:50%; background-color:#fff; border:1px solid#ccc; cursor:pointer;}
+.book_keyword_content_more > button > img{width:9px; height:9px;}
+.book_keyword_content_more > span{font-size:14px; color:#767676; margin-top:10px;}
+/*책 상세 광고 이미지*/
+#book_detail_ad{width:100%; height:auto; padding-top:70px;}
+#book_detail_ad_inner{width:100%; height:100%; border-radius:20px; overflow:hidden;}
+#book_detail_ad_inner > img{width:100%; height:100%; border-radius:20px;}
+/*책 소개 섹션*/
+#book_detail_intro{width:100%; height:420px; margin-top:70px;}
+#book_intro_title_wrap{width:100%; height:140px; border-bottom:1px solid#eaeaea; padding-bottom:20px; display:flex; flex-direction:column; justify-content:flex-start; align-items:space-between;}
+#book_intro_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#book_intro_title_sub{width:100%; height:45px; font-size:16px; line-height:25px;}
+#book_intro_title_nav{width:100%; height:25px; display:flex;}
+#book_intro_title_nav > li{font-size:14px; margin-right:10px;}
+#book_intro_title_nav > li > a{text-decoration:none; color:#595959;}
+#book_intro_title_nav > li > a:hover{text-decoration:underline;}
+#book_intro_title_nav > li > img{width:5px; height:10px;}
+#book_intro_content_wrap{width:100%; height:220px;}
+#book_intro_content_sum{width:100%; height:80px; font-size:16px; font-weight:bold; line-height:20px; color:#000; margin-top:30px;}
+#book_intro_content_info{font-size:15px; line-height:23px; color:#595959;}
+/*작가정보 섹션*/
+#book_detail_person{width:100%; height:auto; margin-top:70px;}
+#book_person_title_wrap{width:100%; height:50px;}
+#book_person_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+.book_person_content_box{width:100%; height:auto; border-radius:20px; background-color:#f7f7f7; box-sizing:border-box; padding:35px 30px 40px;}
+.book_person_content_box:last-child{margin-top:10px;}
+#book_person_author{width:100%; height:auto;}
+.person_content_box_title{width:100%; height:20px; margin-bottom:20px; display:flex; align-items:center;}
+.person_content_box_title > h3{font-size:16px; color:#595959; display:inline-block;}
+.person_content_box_title > h3 > span{margin-left:5px; font-weight:bold; color:#000;}
+.person_content_box_title > button{background:none; border:none; cursor:pointer;}
+.person_content_box_title > button > img{width:18px; height:18px;}
+.person_content_tag_box > button{border-radius:20px; border:none; background:#fff; padding:7px 16px 8px; margin:0px 5px 20px 5px;}
+.person_content_tag_box > button > a{text-decoration:none; color:#595959; font-size:13px; }
+.person_content_box{width:100%; height:auto;}
+.person_content{width:100%; height:70px; overflow:hidden; line-height:24px;}
+/*****가려진 내용 펼치지/접기 버튼 하단내용 전체 css공통 적용*****/
+.overflow_content{width:100%; height:20px; margin-top:10px;}
+.overflow_btn{cursor:pointer; background:none; border:none; margin-left:-7px; display:flex; align-items:center;}
+.overflow_btn:hover > .overflow_text{text-decoration:underline;}
+.overflow_text{font-size:14px; color:#595959;}
+.overflow_img{width:20px; height:20px; margin-left:3px; position:relative;}
+.overflow_img > img{width:20px; height:20px;}
+.person_up{transform:rotate(180deg); position:absolute; top:0; left:0; display:none;}
+/*번역가정보섹션-하단 연관도서*/
+.person_content_wrap{width:100%; height:auto;}
+.book_person_related_content{width:785px; height:230px; box-sizing:border-box; margin:20px 0px 0px 0px; overflow:hidden; position:relative;}
+.book_person_items{width:2100px; height:220px; display:flex; }
+.book_person_item{width:140px; height:220px;}
+.book_person_imgbox{width:120px; height:170px;}
+.book_person_imgbox > a > img{width:120px; height:160px;}
+.book_person_info{width:120px; height:40px; display:flex; align-items:center;}
+.book_person_info > a{text-decoration:none; color:#000; font-size:15px; font-weight:bold; margin-bottom:10px;}
+.book_person_info > a:hover{text-decoration:underline;}
+.book_person_scroll_box{position:absolute; left:30px; bottom:0px; width:calc(100% - 60px); height:2px; z-index:50; border-radius:2px; background:rgba(0,0,0,0.06)}
+.book_person_scroll_bar{width:280px; height:2px; background-color:#000; border-radius:10px; transform:translate3d(0px,0px, 0px); transition-duration:0ms; position:relative; left:0; top:0;}
+/*목차 섹션*/
+#book_detail_table{width:100%; height:auto; margin-top:70px; padding-bottom:70px; border-bottom:1px solid#eaeaea;}
+#book_table_title_wrap{width:100%; height:50px;}
+#book_table_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#book_table_content_wrap{width:100%; height:220px;}
+#book_table_content_overflow{width:100%; height:180px;}
+#book_table_overflow_wrap{overflow:hidden; width:100%; height:180px;}
+#book_table_overflow_inner{width:100%; height:auto;}
+#book_table_box > .book_table_list{color:#595959; font-size:14px; line-height:25px;}
+/*추천사 섹션*/
+#book_detail_recommend{width:100%; height:auto; margin-top:70px; padding-bottom:70px; border-bottom:1px solid#eaeaea;}
+#book_recommend_title_wrap{width:100%; height:50px;}
+#book_recommend_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#book_recommend_content_wrap{width:100%; height:260px;}
+#book_recommend_content_overflow{width:100%; height:220px; overflow:hidden; position:relative;}
+#book_recommend_content_overflow::after{content:""; width:100%; height:15px; background:linear-gradient(180deg, transparent, #fff 15px); position:absolute; bottom:0;}
+#book_recommend_overflow_inner{width:100%; height:auto;}
+#book_recommend_box > .book_recommend_list > .recommend_person{color:#474c98; font-weight:bold; font-size:15px; margin-bottom:15px;}
+#book_recommend_box > .book_recommend_list > .recommend_coment{color:#595959; font-size:15px; line-height:20px; margin-bottom:15px;}
+/*출판사 서평 섹션*/
+#book_detail_publisher{width:100%; height:auto; margin-top:70px; padding-bottom:70px; border-bottom:1px solid#eaeaea;}
+#book_publisher_title_wrap{width:100%; height:50px;}
+#book_publisher_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#book_publisher_content_wrap{width:100%; height:290px;}
+#book_publisher_content_overflow{width:100%; height:250px; overflow:hidden; position:relative;}
+#book_publisher_content_overflow::after{content:""; width:100%; height:15px; background:linear-gradient(180deg, transparent, #fff 15px); position:absolute; bottom:0;}
+#book_publisher_inner{width:100%; height:auto; color:#595959; font-size:15px; line-height:20px; margin-bottom:15px;}
+/*기본정보 섹션*/
+#book_detail_basic{width:100%; height:auto; margin-top:70px; border-bottom:1px solid#eaeaea;}
+#book_basic_title_wrap{width:100%; height:50px; border-bottom:1px solid#000;}
+#book_basic_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#book_basic_content_wrap{width:100%; height:320px; padding:20px 0px; text-align:left;}
+#basic_table{width:100%; margin-top:25px; color:#595959}
+.basic_table_head{height:50px; font-weight:bold; color:#000;}
+/*Klover 리뷰 섹션*/
+/*klover리뷰-제목영역*/
+#klover_review_upper_wrap{width:100%; height:auto; padding-top:70px;}
+#klover_review_title_wrap{width:100%; height:50px; display:flex; justify-content:space-between;}
+#klover_review_title{display:inline-block; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#klover_review_write{width:auto; height:50px; display:flex; align-items:center;}
+#klover_review_write > p{font-size:13px; color:#767676;}
+#klover_review_write > button{font-size:13px; color:#fff; background-color:#5055b1; border:none; margin-left:10px; padding:10px 10px 5px 10px; border-radius:5px; display:flex; align-items:center; transition:0.2s ease-in;}
+#klover_review_write > button > img{width:14px; height:19px; margin-right:5px;}
+#klover_review_write > button:hover{background:#474c98;}
+/*klover리뷰-리뷰박스 요약 영역*/
+#klover_review_box{width:100%; height:270px; box-sizing:border-box; margin-bottom:30px; padding:20px 30px; background-color:#f7f7f7; border:1px solid#d5d5d5; border-radius:20px; display:flex;}
+.klover_review_box_top{width:95%; height:60px;}
+.klover_review_box_bottom{width:95%; height:140px; margin-top:5px;}
+/*klover리뷰-리뷰박스 왼쪽(클로버 평점)*/
+#klover_review_box_left{width:50%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative;}
+#klover_review_box_left::after{content:""; width:1px; height:180px; background:#d5d5d5; position:absolute; top:25px; right:0;}
+#klover_review_box_left > .klover_review_box_top > p{width:100%; height:25px; font-size:15px; font-weight:bold; text-align:center;}
+#klover_review_star_box{width:100%; height:25px; display:flex; justify-content:center; align-items:flex-end;}
+#klover_review_star > .star{width:18px; height:18px;}
+#klover_review_star > .star > img{width:18px; height:18px;}
+#klover_review_grade{margin-left:10px; color:#767676; display:flex; align-items:flex-end;}
+#klover_review_grade > span{margin-right:2px;}
+#klover_review_grade > #klover_avg_grade{font-size:20px; color:#3c9a17; font-weight:bold;}
+.klover_number_box{width:100%; height:20px; margin-left:10px; margin-top:15px; display:flex; align-items:center; justify-content:space-around;}
+.klover_rating_box{width:75px; height:15px;}
+.klover_rating_box > .star{width:15px; height:15px;}
+.klover_rating_box > .star > img{width:15px; height:15px;}
+.klover_score_bar_box{width:200px; height:4px; position:relative;}
+.klover_score_bar_box > .klover_score_bar{width:200px; height:4px; background-color:rgba(0,0,0,0.06); border-radius:2px; position:absolute; top:0; left:0}
+.klover_score_bar_box > #klover_score_best{background-color:#4dac27;}
+.klover_percent_box{width:30px; font-size:13px; letter-spacing:-0.01px; margin-right:5px;}
+/*klover리뷰-리뷰박스 오른쪽(코멘트)*/
+#klover_review_box_right{width:50%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+#klover_review_box_right > .klover_review_box_top > p{font-size:16px; text-align:center;}
+#klover_review_coment_box{display:flex; justify-content:center; margin-top:15px;}
+#klover_review_coment_box > img{width:16px; height:16px; margin-right:5px;}
+#klover_review_coment_box > span{font-size:16px; color:#474c98; font-weight:bold; margin-right:5px;}
+#klover_review_coment_box > p{font-size:16px; color:#000; display:inline-block;}
+#klover_review_box_right > .klover_review_box_bottom{display:flex; justify-content:space-around;}
+.klover_keyword_wrap{display:flex; flex-direction:column; align-items:center; justify-content:space-around;}
+.keyword_percent{font-size:13px; color:#595959;}
+.klover_keyword_bar_box{width:5px; height:60px; position:relative; background-color:rgba(0,0,0,0.06); border-radius:5px;}
+.klover_keyword_bar{width:5px; height:60px;  position:absolute; top:0; left:0;}
+#klover_keyword_bar_first{width:5px; height:58%; background-color:#474c98; position:absolute; top:42%; left:0; border-radius:5px;}
+#keyword_percent_first{padding:3px 5px; border-radius:10px; background-color:#474c98; color:#fff; font-weight:bold;}
+#klover_keyword_first{font-weight:bold; color:#474c98}
+#klover_keyword_bar_second{width:5px; height:42%; background-color:#767676; position:absolute; top:58%; left:0; border-radius:5px;}
+.klover_keyword{font-size:12px; color:#595959;}
+/*고객 상세리뷰 (전체리뷰)*/
+#klover_user_review_wrap{width:100%; height:auto;}
+#klover_user_review_nav{width:100%; height:35px;}
+#user_review_nav_box{width:100%; height:100%; display:flex; box-sizing:border-box; border-bottom:1px solid#d5d5d5}
+#user_review_nav_box > .user_review_nav_list{height:100%; font-size:15px; color:#767676; margin-right:20px; font-weight:bold; cursor:pointer;}
+#user_review_nav_box > .user_review_nav_list:first-child{border-bottom:2px solid#000; color:#000;}
+.klover_user_review_box{width:100%; height:auto;}
+.user_comment_box{width:100%; height:auto; padding-bottom:20px; border-bottom:1px solid#d5d5d5;}
+/*각 리뷰 상단 고객정보 및 별점 정보*/
+.user_comment_header{width:100%; height:25px; margin-top:20px; display:flex; align-items:center; justify-content:space-between;}
+.user_info{width:auto; height:100%; display:flex; align-items:center;}
+.user_book_type{font-size:13px; padding:3px 7px 0px; margin-right:2px; background-color:rgba(23,23,237,0.1); border:1px solid transparent; color:#767676; border-radius:20px;}
+.user_book_real{font-size:13px; padding:3px 7px 0px; margin-right:5px; background-color:#fff; color:#000; border:1px solid#000; border-radius:20px;}
+.user_id{font-size:12px; color:#595959;}
+.user_wall{font-size:10px; color:#595959; margin:0px 3px;}
+.user_write_date{font-size:12px; color:#595959;}
+.user_dele > button{cursor:pointer; border:none; background:none; font-size:12px; color:#595959}
+.user_star_box{display:flex; align-items:center;}
+.user_star_box > span{font-size:10px; color:#595959; margin:0px 5px;}
+.user_rating_box > .star{width:14px; height:14px;}
+.user_rating_box > .star > img{width:14px; height:14px;}
+.user_keyword_box{font-size:14px; color:#474c98; font-weight:bold;}
+.user_keyword_box > img{width:13px; height:13px;}
+/*각 리뷰 고객 작성 내용*/
+.user_comment_content{width:100%; height:130px;}
+.user_comment_inner{width:100%; height:100px; margin-top:15px; overflow:hidden;}
+.user_comment_text{width:100%; height:auto; line-height:20px; font-size:14px;}
+/*왼쪽 긴 광고배너*/
+#book_detail_banner{width:100%; height:140px; padding-top:70px;}
+#book_detail_banner > a > img{width:100%; height:140px; border-radius:15px}
+/*교환반품 규정*/
+#book_detail_refund{width:100%; height:auto; padding-top:70px;}
+#book_refund_title_wrap{width:100%; height:50px; display:flex; justify-content:space-between; border-bottom:1px solid#000;}
+#book_refund_title{width:100%; height:50px; font-size:20px; color:#000; line-height:30px; font-weight:bold;}
+#refund_btn_box{display:flex;}
+#refund_btn{width:110px; height:40px; border-radius:5px; background-color:#fff; color:#000; font-size:13px; padding:2px 10px 0px; border:1px solid#ccc; transition:0.2s ease-in; text-align:center; margin-right:5px;}
+#qna_btn{width:110px; height:40px; border-radius:5px; background-color:#5055b1; color:#fff; font-size:13px; padding:2px 10px 0px; border:1px solid#5055b1; display:flex; align-items:center; justify-content:center; transition:0.2s ease-in;}
+#qna_btn > img{width:16px; height:15px; margin-right:5px;}
+#refund_btn:hover{background-color:#eaeaea; cursor:pointer;}
+#qna_btn:hover{background-color:#474c98; cursor:pointer;}
+#refund_content_wrap{width:100%; height:auto;}
+#refund_content_list{width:100%; height:auto;}
+.refund_content_item{width:100%; height:auto; padding:30px 0px; border-bottom:1px solid#eaeaea}
+.refund_content_item:last-child{border:none;}
+.refund_content_title{font-size:15px; font-weight:bold; padding-bottom:10px;}
+.refund_content_text{font-size:14px; color:#000; line-height:20px;}
+#refund_info_box{width:100%; height:auto; padding:25px 0px; border-radius:10px; background-color:#f7f7f7; }
+#refund_info_box > p{font-size:13px; color:#595959; margin-left:20px; position:relative;}
+#refund_info_box > p::before{content:""; width:3px; height:3px; background-color:#595959; border-radius:50%; position:absolute; top:50%; left:-10px;}
+/******상세 정보 페이지 오른쪽 디테일 정보(연관상품 및 광고)******/
+#book_body_detail_right{width:385px; height:auto;}
+#book_body_ad_wrap{width:330px; height:auto; float:right;}
+/*기분 좋은 발견 시작*/
+#book_ad_find{width:100%; height:210px; padding-top:70px;}
+#book_ad_scroll_wrap{background-color:#fff; width:100%; height:170px; box-sizing:border-box; overflow:hidden; position:relative; display:flex; flex-direction:column;}
+#book_ad_content{width:100%; height:140px;}
+#book_ad_box{width:1400px; height:100%; display:flex;}
+.book_ad_scroll_item{width:280px; height:100%;}
+.book_ad_scroll_item > a > img{width:260px; height:100%; border-radius:20px;}
+#book_ad_scroll_box{position:absolute; left:0px; bottom:0px; width:100%; height:2px; z-index:2; border-radius:2px; background:rgba(0,0,0,0.06)}
+#book_ad_scroll_bar{width:80px; height:2px; background-color:#000; border-radius:10px; transform:translate3d(0px,0px, 0px); transition-duration:0ms; position:relative; left:0; top:0;}
+/*이 분야의 베스트 시작*/
+#book_area_best{width:100%; height:850px;  padding:50px 0px;}
+#book_area_best_box{width:100%; height:800px; display:flex; flex-direction:column; justify-content:space-between;}
+.book_area_best_content{width:100%; height:145px; display:flex; align-items:center; justify-content:space-between;}
+.book_area_best_imgbox{width:100px; height:145px;}
+.book_area_best_imgbox > a > img{width:100px; height:145px;}
+.book_area_best_infobox{width:210px; height:120px; display:flex; flex-direction:column;}
+.book_area_best_rank{width:20px; height:20px; background-color:#767676; color:#fff; font-weight:bold; font-size:12px; border-radius:5px 0px; display:flex; justify-content:center; align-items:center;}
+#book_area_first_rank{background-color:#4dac27}
+.book_area_best_title{margin-top:10px;}
+.book_area_best_title > a{text-decoration:none; color:#000; font-size:15px; font-weight:bold;}
+.book_area_best_title > a:hover{text-decoration:underline;}
+.book_area_author{font-size:13px; color:#595959; margin-top:10px;}
+.book_area_best_pricebox{display:flex; font-size:14px; margin-top:20px;}
+.book_area_best_percent{font-weight:bold; color:#4dac27; margin-right:2px;}
+.book_area_best_price{font-weight:bold;}
+/*이 분야의 신간 시작*/
+#book_area_new{width:100%; height:850px; padding:50px 0px;}
+#book_area_new_box{width:100%; height:800px; display:flex; flex-direction:column; justify-content:space-between;}
+.book_area_new_content{width:100%; height:145px; display:flex; align-items:center; justify-content:space-between;}
+.book_area_new_imgbox{width:100px; height:145px;}
+.book_area_new_imgbox > a > img{width:100px; height:145px;}
+.book_area_new_infobox{width:210px; height:120px; display:flex; flex-direction:column;}
+.book_area_new_rank{width:20px; height:20px; background-color:#767676; color:#fff; font-weight:bold; font-size:12px; border-radius:5px 0px; display:flex; justify-content:center; align-items:center;}
+#book_area_first_rank{background-color:#4dac27}
+.book_area_new_title{margin-top:10px;}
+.book_area_new_title > a{text-decoration:none; color:#000; font-size:15px; font-weight:bold;}
+.book_area_new_title > a:hover{text-decoration:underline;}
+.book_area_new_author{font-size:13px; color:#595959; margin-top:10px;}
+.book_area_new_pricebox{display:flex; font-size:14px; margin-top:20px;}
+.book_area_new_percent{font-weight:bold; color:#4dac27; margin-right:2px;}
+.book_area_new_price{font-weight:bold;}
+/*중간 배너-'이 분야의 베스트'와 '이 분야의 신간' 사이에 1개 , '이 분야의 신간' 뒤에 2개 삽입*/
+.book_ad_banner{width:100%; height:180px;}
+.book_ad_banner:last-child{padding-top:20px;}
+.book_ad_banner_imgbox{width:330px; height:180px; border-radius:20px; overflow:hidden;}
+.book_ad_banner_imgbox > a > img{width:330px; height:180px;}

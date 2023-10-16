@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>교보문고</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300&family=Noto+Sans+KR&family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--javascript/jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <!--navMenu&menuScroll&footerOption js파일은 서브 헤더에 공통적용-->
+    <script src="js/js/common/navMenu.js"></script>
+    <script src="js/js/common/menuScroll.js"></script>
+    <script src="js/js/sub/flyingSub.js"></script>
+    <script src="js/js/sub/categoryNav.js"></script>
+    <script src="js/js/sub/bookSale.js"></script>
+    <script src="js/js/sub/bookBodyNav.js"></script>
+    <script src="js/js/sub/keywordPick.js"></script>
+    <script src="js/js/sub/upDownButton.js"></script>
+    <script src="js/js/sub/userReview.js"></script>
+    <script src="js/js/common/footerOption.js"></script>
+
+    <!--ajax-->
+    <script src="js/ajax/common/toggle_nav.js"></script>
+    <script src="js/ajax/sub/book_intro.js"></script>
+    <script src="js/ajax/sub/book_detail_person.js"></script>
+    <script src="js/ajax/sub/book_detail_table.js"></script>
+    <script src="js/ajax/sub/book_recommend.js"></script>
+    <script src="js/ajax/sub/book_publisher.js"></script>
+
+    <!--카카오톡 도서openAPI-->
+    <script src="js/ajax/sub/book_sale.js"></script>
+    <script src="js/ajax/sub/book_related.js"></script>
+    <script src="js/ajax/sub/keyword_pick.js"></script>
+    <script src="js/ajax/sub/area_best.js"></script>
+    <script src="js/ajax/sub/area_new.js"></script>
+    <script src="js/ajax/sub/book_person.js"></script>   
+
+    <!--css-->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+
+    <style>
+
+</style>
+</head>
+
+<body>
+    <div id="gb_upperwrap">
+        <header>
+            <!--최상단 광고 배너-->
+            <div id="welcom_banner">
+                <div id="top_ad">
+                    <a href="index.html" target="_self">
+                        <img src="img/common/header/ad1.jpg" alt="광고배너" id="ad_img"> </a>
+                </div>
+            </div>
+            <!--최상단 브랜드 네비게이션 더보기 및 회원혜택 에 토글 메뉴 삽입 필요-->
+            <div id="upper_wrap">
+                <div id="wrap">
+                    <div id="before_menu">
+                        <img src="img/common/header/menu1.png" alt="메뉴이미지">
+                    </div>
+                    <!--메인 컬러 메뉴 menu5에 토글메뉴 삽입-->
+                    <div id="main_menu">
+                        <ul>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu2.svg" alt="메뉴이미지" id="menu1"><text
+                                        id="text1">eBook</text></a>
+                            </li>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu2.svg" alt="메뉴이미지" id="menu2"><text
+                                        id="text2">sam</text></a>
+                            </li>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu2.svg" alt="메뉴이미지" id="menu3"><text
+                                        id="text3">핫트랙스</text></a>
+                            </li>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu2.svg" alt="메뉴이미지" id="menu4"><text
+                                        id="text4">매장안내</text></a>
+                            </li>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu3.svg" alt="메뉴이미지" id="menu5"><text
+                                        id="text5">톡소다</text></a>
+                            </li>
+                            <li><a href="index.html" target="_self"><img src="img/common/header/menu4.svg" alt="메뉴이미지" id="menu6"><text
+                                        id="text6">스토리</text></a>
+                            </li>
+                        </ul>
+                        <button id="more_brand">
+                            <span class="text">브랜드 더보기<img src="img/common/header/button1.png" alt="더보기" style="width:8px; height:6px; vertical-align:top; margin:6px 0px 0px 4px"><span>
+                        </button>
+                    </div>
+                    <!--우측 회원가입 및 고개센터 메뉴 회원헤택 토글 메뉴 삽입 필요-->
+                    <div id="after_menu">
+                        <ul id="user_menu">
+                            <li><a href="index.html" target="_self">회원가입</a></li>
+                            <li>|</li>
+                            <li><a href="index.html" target="_self">로그인</a></li>
+                            <li>|</li>
+                            <li>회원혜택<img src='img/common/header/button1.png' alt="회원혜택" style="width:8px; height:6px; margin:3px 0px 0px 4px; vertical-align:top"></li>
+                            <li>|</li>
+                            <li><a href="index.html" target="_self">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blank"></div>
+            <div id="search_wrap">
+                <div id="search_menu">
+                    <div id="main_logo">
+                        <a href="index.html" target="_self"><img src="img/common/header/logo1.png" alt="메인로고"></a>
+                    </div>
+                    <div id="search_box">
+                        <select>
+                            <option>통합검색</option>
+                            <option>교보문고</option>
+                            <option>eBook</option>
+                            <option>sam</option>
+                            <option>핫트랙스</option>
+                        </select>
+                        <span>|</span>
+                        <input type="search" maxlength="20" value placeholder="삶의 도구가 라이프스타일을 바꾼다">
+                        <a href="index.html" target="_self"><img src="img/common/header/search_icon.png" alt="검색아이콘"></a>
+                    </div>
+
+                    <div id="basket_box">
+                        <a href="index.html" target="_self"><img src="img/common/header/icon1.png" alt="장바구니 아이콘"></a>
+                        <a href="index.html" target="_self"><img src="img/common/header/icon2.png" alt="장바구니 아이콘"></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="nav_wrap">
+                <nav id="nav_menu">
+                    <div id="toggle_menu">
+                        <img src="img/common/header/toggle1.png" alt="토글메뉴" id="toggle1">
+                        <img src="img/common/header/toggle2.png" alt="토글메뉴" id="toggle2">
+                        <div id="toggle_menu_list">
+                            <div id="toggle_inner_box">
+                                <div id="toggle_inner_title">
+                                    <ul>
+                                        <li id="whole_category">카테고리 전체보기</li>
+                                        <li id="whole_service">서비스 전체보기</li>
+                                    </ul>
+                                </div>
+                                <div id="toggle_content_wrap">
+                                    <!--카테고리 전체보기 메뉴-->
+                                    <div id="toggle_content">
+                                        <div id="toggle_inner_nav">
+                                            <ul>
+                                                <li class="toggle_nav_title">교보문고</li>
+                                                <li class="toggle_nav_title">eBook</li>
+                                                <li class="toggle_nav_title">sam</li>
+                                                <li class="toggle_nav_title">핫트랙스</li>
+                                            </ul>
+                                        </div>
+                                        <div class="toggle_list">
+                                            <div class="toggle_text">
+                                                <div class="toggle_text_left">
+                                                    <ul>
+                                                        <li class="toggle_left_title">국내도서</li>
+                                                        <li class="toggle_left_title">서양도서</li>
+                                                        <li class="toggle_left_title">일본도서</li>
+                                                        <li class="toggle_left_title">교보Only</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="toggle_text_right">
+                                                    <div class="toggle_text_scroll">
+                                                        <div class="toggle_text_whole">
+                                                            <div class="toggle_text_title"><span>국내도서 전체</span></div>
+                                                            <div class="toggle_text_content">
+                                                                <div class="toggle_text_col">
+                                                                    <ul>
+                                                                        <li><a href="index.html" target="_self">소설</a></li>
+                                                                        <li><a href="index.html" target="_self">시/에세이</a></li>
+                                                                        <li><a href="index.html" target="_self">인문</a></li>
+                                                                        <li><a href="index.html" target="_self">가정/육아</a></li>
+                                                                        <li><a href="index.html" target="_self">요리</a></li>
+                                                                        <li><a href="index.html" target="_self">건강</a></li>
+                                                                        <li><a href="index.html" target="_self">취미/실용/스포츠</a></li>
+                                                                        <li><a href="index.html" target="_self">경제/경영</a></li>
+                                                                        <li><a href="index.html" target="_self">자기계발</a></li>
+                                                                        <li><a href="index.html" target="_self">정치/사회</a></li>
+                                                                        <li><a href="index.html" target="_self">역사/문화</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="toggle_text_col">
+                                                                    <ul>
+                                                                        <li><a href="index.html" target="_self">종교</a></li>
+                                                                        <li><a href="index.html" target="_self">예술/대중문화</a></li>
+                                                                        <li><a href="index.html" target="_self">중/고등참고서</a></li>
+                                                                        <li><a href="index.html" target="_self">기술/공학</a></li>
+                                                                        <li><a href="index.html" target="_self">외국어</a></li>
+                                                                        <li><a href="index.html" target="_self">과학</a></li>
+                                                                        <li><a href="index.html" target="_self">취업/수험서</a></li>
+                                                                        <li><a href="index.html" target="_self">여행</a></li>
+                                                                        <li><a href="index.html" target="_self">컴퓨터/IT</a></li>
+                                                                        <li><a href="index.html" target="_self">잡지</a></li>
+                                                                        <li><a href="index.html" target="_self">청소년</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="toggle_text_col">
+                                                                    <ul>
+                                                                        <li><a href="index.html" target="_self">초등참고서</a></li>
+                                                                        <li><a href="index.html" target="_self">유아(0~7세)</a></li>
+                                                                        <li><a href="index.html" target="_self">어린이(초등)</a></li>
+                                                                        <li><a href="index.html" target="_self">만화</a></li>
+                                                                        <li><a href="index.html" target="_self">대학교재</a></li>
+                                                                        <li><a href="index.html" target="_self">한국소개도서</a></li>
+                                                                        <li><a href="index.html" target="_self">교보오리지널</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toggle_text_special">
+                                                            <div class="toggle_text_title"><span>스페셜 코너</span></div>
+                                                            <div class="toggle_text_content">
+                                                                <div class="toggle_text_col">
+                                                                    <ul>
+                                                                        <li><a href="index.html" target="_self">오늘의 선택</a></li>
+                                                                        <li><a href="index.html" target="_self">추천</a></li>
+                                                                        <li><a href="index.html" target="_self">선물하기</a></li>
+                                                                        <li><a href="index.html" target="_self">분철서비스</a></li>
+                                                                        <li><a href="index.html" target="_self">특가</a></li>
+                                                                        <li><a href="index.html" target="_self">정가인하</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="toggle_bottom">
+                                                        <ul class="toggle_icon_box">
+                                                            <!--toggle_nav ajax 적용-->
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                            <li class="bttom_icon"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!--서비스 전체보기 메뉴-->
+                                    <div id="toggle_service">
+                                        <div id="toggle_service_wrap">
+                                            <div id="service_scroll_box">
+                                                <div id="service_scroll_inner">
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>주요서비스</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">종합
+                                                                            베스트셀러</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">스테디셀러</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">신상품</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">사은품</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">특가</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">정가인하</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">인물&작품</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">선물하기</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">추천</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>웹소설 톡소다</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">웹소설</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">웹툰</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">자유연재</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">베스트</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>고객센터</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a
+                                                                            href="index.html" target="_self">자주묻는질문</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">1:1문의</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">공지사항</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">전화상담안내도</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">법인회원대량주문</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>기타</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이용약관</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">개인정보처리방침</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">청소년보호정책</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>이벤트 / 혜택</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">출석체크</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이벤트당첨자</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이벤트</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>핫트랙스</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">오늘만특가</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">베스트</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">쿠폰/혜택</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">COVERWELL (POD)</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>마이</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">주문/배송목록</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">선물함</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">활동내역</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">매장 구매 내역</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">영수증 조회/후 적립</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">회원정보</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">알림센터</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">나의 통장</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>ONLY서비스</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">책 그리고 꽃</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이달의 책</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">오늘의 선택</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">POD 주문형출판</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">스펙비교</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">기프트카드</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">분철서비스</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">바로찾는바로드림</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">수준별원서읽기</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">디 에센셜</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>CASTing</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">홈</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">라이브</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">영상</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">포스트</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이벤트</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>라이브러리</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">리스트</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">코멘트</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href=>Klover리뷰</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">문장수집</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>캠페인</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">Story</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">캠페인 소개</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">교보손글씨대회</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">#일상속손글씨</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">손글씨 폰트</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이벤트</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>북모닝</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이달의 북모닝도서</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이주의 북모닝도서</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">북모닝소개</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이용권 구매</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>매장안내</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list">
+                                                                        <a href="index.html" target="_self">문보장</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>문화공간</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">강연/공연</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">여행/체험</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">전시</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">이벤트/소식</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>스토리</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">포트폴리오</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">스토리공모전</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">테마공모전</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">스토리마켓</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>회사소개</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">교보문고 소개</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">사업현황</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">사회공헌</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">채용정보</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="service_col_box">
+                                                        <ul class="service_content_box">
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>eBook/sam</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">오디오북</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">대여</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">신간</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">교보오리지널</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">sam무제한</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">sam프리미엄</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">sam북모닝</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">학술논문</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>회원혜택</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">교보북클럽</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">등급별 혜택</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">신규회원혜택</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">Prestige Lounge</a></li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">제휴포인트상품권</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">참좋은교보문고</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="service_content">
+                                                                <a href="index.html" target="_self">
+                                                                    <sapn>협력사여러분</sapn>
+                                                                </a>
+                                                                <ul class="service_inner_box">
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">협력사여러분</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">제휴/제안</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">애드북</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">협력사네트워크</a>
+                                                                    </li>
+                                                                    <li class="service_inner_list"><a href="index.html" target="_self">CP관리시스템</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul id="gb_menu1">
+                        <a href="index.html" target="_self">
+                            <li><em>계절-시선</em></li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon"><em>소리-채집</em></li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">베스트</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">신상품</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">이벤트</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">사은품</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">PICKS</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">CASTing</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li class="before_icon">교보ONLY</li>
+                        </a>
+                    </ul>
+                    <ul id="gb_menu2">
+                        <a href="index.html" target="_self">
+                            <li>할인혜택</li>
+                        </a>
+                        <a href="index.html" target="_self">
+                            <li>출석체크</li>
+                        </a>
+                        <div id="toggle_menu2">
+                            <img src="img/common/header/toggle3.png" alt="토글메뉴" id="toggle3">
+                            <img src="img/common/header/toggle4.png" alt="토글메뉴" id="toggle4">
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!--내용 section 상단 도서 카테고리 필터-->
+        <div id="section_wrap">
+            <section id="flying_banner_wrap">
+                <div id="flying_banner_inner">
+                    <div id="flying_content">
+                        <div id="flying_banner_first">
+                            <a href="index.html" target="_self"><img src="img/common/flying/ad.jpg" alt="광고이미지"></a>
+                        </div>
+                        <div id="flying_banner_second">
+                            <div class="flying_event_wrap">
+                                <span><a href="index.html" target="_self">이벤트</a></span>
+                                <span><a href="index.html" target="_self"><img src="img/common/flying/icon2.png" alt="이벤트더보기"></a></span>
+                            </div>
+                            <div id="flying_img_wrap">
+                                <ul id="flying_img_box">
+                                    <li class="flying_img"><a href="index.html" target="_self">
+                                            <img src="img/common/flying/img1.png">
+                                        </a>
+                                    </li>
+                                    <li class="flying_img"><a href="index.html" target="_self">
+                                            <img src="img/common/flying/img2.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="flying_img"><a href="index.html" target="_self">
+                                            <img src="img/common/flying/img3.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="flying_img"><a href="index.html" target="_self">
+                                            <img src="img/common/flying/img4.jpg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="flying_control_box">
+                                <button id="flying_prev"><img src="img/common/flying/icon.png"></button>
+                                <span id="flying_page">01</span>
+                                <span>-</span>
+                                <span>04</span>
+                                <button id="flying_next"><img src="img/common/flying/icon.png"></button>
+                            </div>
+                            <div class="flying_event_wrap">
+                                <span><a href="index.html" target="_self">쿠폰/혜택</a></span>
+                                <span><a href="index.html" target="_self"><img src="img/common/flying/icon2.png" alt="이벤트더보기"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flying_up">
+                        <div id="flying_btn">
+                            <a href="#gb_upperwrap">
+                                <div id="flying_btn_img">
+                                    <img src="img/common/flying/icon3.png">
+                                </div>
+                                <span>TOP</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="book_header_wrap">
+                <section id="category_nav_wrap">
+                    <div id="category_nav_inner">
+                        <ul id="category_nav_box">
+                            <li class="category_nav_list"><a href="index.html" target="_self"><img src="img/sub/category/icon1.png" alt="메인페이지"></a>
+                            </li>
+                            <li class="category_nav_list" id="category_nav_list1"><a href="index.html" target="_self"><span>국내도서</span>
+                                    <div class="category_more"><img src="img/sub/category/icon2.png" alt="상세"
+                                            class='category_down' id="category_down1"><img src="img/sub/category/icon3.png"
+                                            alt="상세" class='category_up' id="category_up1"></div>
+                                </a>
+                                <div class="category_sub_wrap" id="category_sub_wrap1">
+                                    <ul>
+                                        <li class="category_sub_list"><a href="index.html" target="_self"><strong>국내도서</strong></a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">서양도서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">일본도서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">교보ONLY</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category_nav_list">/</li>
+                            <li class="category_nav_list" id="category_nav_list2"><a href="index.html" target="_self"><span>자기계발</span>
+                                    <div class="category_more"><img src="img/sub/category/icon2.png" alt="상세"
+                                            class='category_down' id="category_down2"><img src="img/sub/category/icon3.png"
+                                            alt="상세" class='category_up' id="category_up2"></div>
+                                </a>
+                                <div class="category_sub_wrap" id="category_sub_wrap2">
+                                    <ul class="category_sub_box">
+                                        <li class="category_sub_list"><a href="index.html" target="_self">소설</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">시/에세이</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">인문</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">가정/육아</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">요리</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">건강</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">취미/실용/스포츠</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">경제/경영</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self"><strong>자기계발</strong></a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">정치/사회</a></li>
+                                    </ul>
+                                    <ul class="category_sub_box">
+                                        <li class="category_sub_list"><a href="index.html" target="_self">역사/문화</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">종교</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">예술/대중문화</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">중/고등참고서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">기술/공학</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">외국어</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">과학</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">취업/수험서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">여행</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">컴퓨터/IT</a></li>
+                                    </ul>
+                                    <ul class="category_sub_box">
+                                        <li class="category_sub_list"><a href="index.html" target="_self">잡지</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">청소년</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">초등참고서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">유아(0~7세)</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">어린이(초등)</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">만화</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">대학교재</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">한국소개도서</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">교보오리지널</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category_nav_list">/</li>
+                            <li class="category_nav_list" id="category_nav_list3"><a href="index.html" target="_self"><span>성공/처세</span>
+                                    <div class="category_more"><img src="img/sub/category/icon2.png" alt="상세"
+                                            class='category_down' id="category_down3"><img src="img/sub/category/icon3.png"
+                                            alt="상세" class='category_up' id="category_up3"></div>
+                                </a>
+                                <div class="category_sub_wrap" id="category_sub_wrap3">
+                                    <ul>
+                                        <li class="category_sub_list"><a href="index.html" target="_self"><strong>성공/처세</strong></a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">자기능력계발</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">비즈니스능력계발</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">인간관계</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">화술/협상</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">청소년자기계발</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">오디오북</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">전자책단말기/전자기기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category_nav_list">/</li>
+                            <li class="category_nav_list" id="category_nav_list4"><a href="index.html" target="_self"><span>자기관리/처세</span>
+                                    <div class="category_more"><img src="img/sub/category/icon2.png" alt="상세"
+                                            class='category_down' id="category_down4"><img src="img/sub/category/icon3.png"
+                                            alt="상세" class='category_up' id="category_up4"></div>
+                                </a>
+                                <div class="category_sub_wrap" id="category_sub_wrap4">
+                                    <ul>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">자기관리/처세</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">청년훈</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">삶의지혜/조언</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">직장처세</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">성공스토리</a></li>
+                                        <li class="category_sub_list"><a href="index.html" target="_self">카네기시리즈</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <section id="book_sale_wrap">
+                    <div class="book_sale_box">
+                        <div id="book_sale_title_area">
+                            <div id="book_sale_share">
+                                <button><img src="img/sub/booksale/icon.png" alt="공유"></button>
+                            </div>
+                            <div id="book_sale_sub_title">매일 아침 나를 일으킨 한 마디</div>
+                        </div>
+                        <div id="book_sale_content_area">
+                            <div id="book_sale_content_left">
+                                <div id="book_sale_cover_wrap">
+                                    <div id="book_sale_content_cover">
+                                        <img src="img/sub/booksale/img1.jpg">
+                                    </div>
+                                </div>
+                                <div id="book_sale_pre">
+                                    <button><img src="img/sub/booksale/icon2.png" alt="미리보기"><span>미리보기</span></button>
+                                </div>
+                            </div>
+                            <div id="book_sale_content_right">
+                                <div id="book_sale_info">
+                                    <div id="book_author_info">
+                                        <span>·</span>
+                                    </div>
+                                    <div id="book_des_info">
+                                        <span>·</span>
+                                        <span>2023년 09월 04일</span>
+                                    </div>
+                                    <div id="book_sale_rank">
+                                        <p>주간베스트</p>
+                                        <span>자기계발<strong>17</strong>위</span>
+                                    </div>
+                                    <div id="book_sale_review_box">
+                                        <button id="book_sale_review_btn">
+                                            <a href="index.html" target="_self">
+                                                <div id="book_sale_review_left">
+                                                    <span id="book_sale_review_score">10.0</span>
+                                                    <div id="book_sale_star">
+                                                        <span class="star"><img src="img/sub/booksale/clover.png"
+                                                                alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png"
+                                                                alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png"
+                                                                alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png"
+                                                                alt="평점수"></span>
+                                                    </div>
+                                                    <span id="book_sale_review_count">(19개의 리뷰)<span>
+                                                </div>
+                                                <div id="book_sale_review_right">
+                                                    <span id="book_sale_review_memo"><img
+                                                            src="img/sub/booksale/icon6.png"></span>
+                                                    <div id="book_sale_coment">
+                                                        <span class="coment">도움돼요</span>
+                                                    </div>
+                                                    <span id="book_sale_review_coment">(59%의 구매자)<span>
+                                                </div>
+                                            </a>
+                                        </button>
+                                    </div>
+        
+                                    <div id="book_sale_price_wrap">
+                                        <div id="book_sale_keyword_box">
+                                            <span>MD의 선택</span>
+                                            <span>무료배송</span>
+                                            <span>소득공제</span>
+                                        </div>
+                                        <div id="book_sale_price_box"></div>
+                                        <div id="book_sale_price_info_box">
+                                            <div id="book_sale_benefit">
+                                                <div id="book_benefit_box">
+                                                    <div id="book_benefit_title">적립/혜택</div>
+                                                    <div id="book_benefit_info">
+                                                        <div id="book_benefit">900P</div>
+                                                        <div id="book_benefit_more">
+                                                            <img src="img/sub/booksale/icon7.png" alt="정보더보기"
+                                                                id="book_benefit_down">
+                                                            <img src="img/sub/booksale/icon8.png" alt="정보더보기"
+                                                                id="book_benefit_up">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="book_sale_ship">
+                                                <div id="book_ship_box">
+                                                    <div class="book_ship_list" id="book_ship_list1">
+                                                        <div id="book_ship_title">배송안내</div>
+                                                        <div id="book_ship_info">
+                                                            <div id="book_ship1">무료배송</div>
+                                                            <div class="book_ship_more"><img src="img/sub/booksale/icon10.png"
+                                                                    alt='배송정보'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="book_ship_list" id="book_ship_list2">
+                                                        <div id="book_ship_info2">
+                                                            <span>당일배송</span>
+                                                            <p>오늘(10/12,목) 도착예정</p>
+                                                        </div>
+                                                        <div class="book_ship_more"><img src="img/sub/booksale/icon11.png"
+                                                                alt='배송정보' id="book_ship_info_more"></div>
+                                                    </div>
+                                                    <div class="book_ship_list" id="book_ship_list3">
+                                                        <div id="book_ship_info3">
+                                                            <div id="book_ship2">서울시 종로구 종로 1</div>
+                                                            <div><button>변경<img src="img/sub/booksale/icon9.png"
+                                                                        alt="더보기"></button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="book_sale_bell">
+                                                <div id="book_sale_bell_box">
+                                                    <p>
+                                                        알림 신청하시면 원하시는 정보를
+                                                        <br>
+                                                        받아 보실 수 있습니다.
+                                                    </p>
+                                                    <div><button><img src="img/sub/booksale/icon12.png" alt="알림신청">알림신청</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="book_sale_stock">
+                                    <button><img src="img/sub/booksale/icon13.png" alt="매장정보">매장별 재고 및 도서위치</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+            <div id="book_body_wrap">
+                <section id="book_body_nav_wrap">
+                    <div id="book_body_nav_box">
+                        <ul id="book_body_nav">
+                            <li class="book_body_nav_list"><a href="#book_detail_related">상품정보</a></li>
+                            <li class="book_body_nav_list"><a href="#klover_review_upper_wrap">리뷰</a></li>
+                            <li class="book_body_nav_list"><a href="#book_detail_refund">교환/반품/품절</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="book_body_detail_upperwrap">
+                    <div id="book_body_detail_wrap">
+                        <!--상세 정보 페이지 왼쪽 디테일 정보(상품정보/리뷰/교환반품규정)-->
+                        <div id="book_body_detail_left">
+                            <!--함께 구매한 책 컨텐츠-->
+                            <div id="book_detail_related">
+                                <div class="book_detail_title_wrap">
+                                    <h4 class="book_detail_title">함께 구매한 책</h4>
+                                </div>
+                                <div class="book_detail_content_wrap">
+                                    <div class="book_detail_related_content">
+                                        <ul class="book_related_items">
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                            <li class="book_related_item"></li>
+                                        </ul>
+                                        <div class="book_related_scroll_box">
+                                            <div class="book_related_scroll_bar"></div>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                            <!--키워드Pick 컨텐츠-->
+                            <div id="book_detail_keyword">
+                                <div class="book_detail_title_wrap">
+                                    <h4 class="book_detail_title">키워드 Pick</h4>
+                                </div>
+                                <div class="book_detail_content_wrap">
+                                    <div id="book_keyword_nav_box">
+                                        <ul id="book_keyword_nav">
+                                            <li class="book_keyword_list">연설가</li>
+                                            <li class="book_keyword_list">피해 의식</li>
+                                            <li class="book_keyword_list">트레이시</li>
+                                            <li class="book_keyword_list">이케아</li>
+                                            <li class="book_keyword_list">다이어</li>
+                                            <li class="book_keyword_list">미국 최고</li>
+                                        </ul>
+                                        <div id="book_keyword_content_wrap">
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box1">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box2">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box3">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box4">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box5">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                            <ul class="book_keyword_content_box" id="book_keyword_content_box6">
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content"></li>
+                                                <li class="book_keyword_content_more">
+                                                    <button><img src="img/sub/keywordpick/icon1.png" alt="더보기"></button>
+                                                    <span>더보기</span>
+                                                <li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--책 상세 광고 이미지-->
+                            <div id="book_detail_ad">
+                                <div id="book_detail_ad_inner">
+                                    <img src="img/sub/bookad/img8.jpg" alt="책광고 이미지">
+                                </div>
+                            </div>
+                            <!--책 소개섹션-->
+                            <div id="book_detail_intro">                                
+                                <div id="book_intro_title_wrap">
+                                    <h4 id="book_intro_title">책소개</h4>
+                                    <p id="book_intro_title_sub">이 책이 속한 분야</p>
+                                    <ul id="book_intro_title_nav">
+                                        <li class="book_intro_title_list"><a href="index.html" target="_self">국내도서</a></li>
+                                        <li class="book_intro_title_list"><img src="img/sub/intro/icon1.png" alt="아이콘"></li>
+                                        <li class="book_intro_title_list"><a href="index.html" target="_self">자기계발</a></li>
+                                        <li class="book_intro_title_list"><img src="img/sub/intro/icon1.png" alt="아이콘"></li>
+                                        <li class="book_intro_title_list"><a href="index.html" target="_self">성공/처세</a></li>
+                                        <li class="book_intro_title_list"><img src="img/sub/intro/icon1.png" alt="아이콘"></li>
+                                        <li class="book_intro_title_list"><a href="index.html" target="_self">자기관리/처세</a></li>
+                                    </ul>
+                                </div>
+                                <div id="book_intro_content_wrap"></div>                                
+                            </div>
+                            <!--작가정보섹션-->
+                            <div id="book_detail_person">
+                                <div id="book_person_title_wrap">
+                                    <h4 id="book_person_title">작가정보</h4>
+                                </div>
+                                <div id="book_person_content_wrap">
+                                    <!--저자소개-->
+                                    <div class="book_person_content_box">
+                                        <div id="book_person_author"></div>
+                                        <div class='overflow_content'>
+                                            <button class="overflow_btn">
+                                                <span class="overflow_text" id="overflow_text1">펼치기</span>
+                                                <span class="overflow_img">
+                                                    <img src="img/sub/person/icon2.png" id="person_down1">
+                                                    <img src="img/sub/person/icon2.png" class='person_up' id="person_up1">
+                                                </span>
+                                            </button>                                            
+                                        </div>
+                                    </div>
+                                    <!--번역자 소개-->
+                                    <div class="book_person_content_box">
+                                        <div id="book_person_translator"></div>
+                                        <div class='overflow_content'>
+                                            <button class="overflow_btn">
+                                                <span class="overflow_text" id="overflow_text2">펼치기</span>
+                                                <span class="overflow_img">
+                                                    <img src="img/sub/person/icon2.png" id="person_down2">
+                                                    <img src="img/sub/person/icon2.png" class='person_up' id="person_up2">
+                                                </span>
+                                            </button>                                            
+                                        </div>
+                                        <div class="person_related_book">
+                                            <div class="person_content_wrap">
+                                                <div class="book_person_related_content swiper">
+                                                    <ul class="book_person_items swiper-wrapper">
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                        <li class="book_person_item swiper-slide"></li>
+                                                    </ul>
+                                                    <div class="book_person_scroll_box swiper-scrollbar">
+                                                        <div class="book_person_scroll_bar swiper-scrollbar-drag"></div>
+                                                    </div>
+                                                </div>        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!--목차-->
+                            <div id="book_detail_table">
+                                <div id="book_table_title_wrap">
+                                    <h4 id="book_table_title">목차</h4>
+                                </div>
+                                <div id="book_table_content_wrap">
+                                    <div id="book_table_content_overflow">
+                                        <div id="book_table_overflow_wrap">
+                                            <div id="book_table_overflow_inner"></div>
+                                        </div>
+                                        <div class="overflow_content">
+                                            <button class="overflow_btn" id="overflow_btn3">
+                                                <span class="overflow_text" id="overflow_text3">펼치기</span>
+                                                <span class="overflow_img">
+                                                    <img src="img/sub/person/icon2.png" id="person_down3">
+                                                    <img src="img/sub/person/icon2.png" class='person_up' id="person_up3">
+                                                </span>
+                                            </button>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--추천사-->
+                            <div id="book_detail_recommend">
+                                <div id="book_recommend_title_wrap">
+                                    <h4 id="book_recommend_title">추천사</h4>
+                                </div>
+                                <div id="book_recommend_content_wrap">
+                                    <div id="book_recommend_content_overflow">
+                                        <div id="book_recommend_overflow_inner"></div>
+                                    </div>
+                                    <div class="overflow_content">
+                                        <button class="overflow_btn" id="overflow_btn4">
+                                            <span class="overflow_text" id="overflow_text4">펼치기</span>
+                                            <span class="overflow_img">
+                                                <img src="img/sub/person/icon2.png" id="person_down4">
+                                                <img src="img/sub/person/icon2.png" class='person_up' id="person_up4">
+                                            </span>
+                                        </button>                                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!--출판사 서평-->
+                            <div id="book_detail_publisher">
+                                <div id="book_publisher_title_wrap">
+                                    <h4 id="book_publisher_title">출판사 서평</h4>
+                                </div>
+                                <div id="book_publisher_content_wrap">
+                                    <div id="book_publisher_content_overflow"></div>
+                                    <div class="overflow_content">
+                                        <button class="overflow_btn" id="overflow_btn5">
+                                            <span class="overflow_text" id="overflow_text5">펼치기</span>
+                                            <span class="overflow_img">
+                                                <img src="img/sub/person/icon2.png" id="person_down5">
+                                                <img src="img/sub/person/icon2.png" class='person_up' id="person_up5">
+                                            </span>
+                                        </button>                                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!--기본정보-->
+                            <div id="book_detail_basic">
+                                <div id="book_basic_title_wrap">
+                                    <h4 id="book_basic_title">기본정보</h4>
+                                </div>
+                                <div id="book_basic_content_wrap">
+                                    <table id="basic_table">
+                                        <colgroup>
+                                            <col style="width:20%;">
+                                            <col style="width:80%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="basic_table_head">ISBN</th>
+                                                <td>9791192625713</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="basic_table_head">발행(출시)일자</th>
+                                                <td>2023년 09월 04일</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="basic_table_head">쪽수</th>
+                                                <td>343쪽</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="basic_table_head">크기</th>
+                                                <td>153 * 226 * 23 mm / 170 g</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="basic_table_head">총권수</th>
+                                                <td>1권</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="basic_table_head">원서명</th>
+                                                <td>You Owe You: Ignite Your Power, Your Purpose, and Your Why/Eric Thomas, PhD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--Klover 리뷰-->
+                            <div id="klover_review_upper_wrap">
+                                <!--klover 리뷰 최상단 타이틀-->
+                                <div id="klover_review_title_wrap">
+                                    <h4 id="klover_review_title">Klover 리뷰</h4>
+                                    <div id="klover_review_write">
+                                        <p>* 구매 후 리뷰 작성 시, e교환권 200원 적립</p>
+                                        <button><img src="img/sub/kloverreview/icon1.png">리뷰 작성</button>
+                                    </div>
+                                </div>
+                                <!--klover 리뷰 타이틀 다음 요약 평점 gray 박스-->
+                                <div id="klover_review_box">
+                                    <div id="klover_review_box_left">
+                                        <div class="klover_review_box_top">
+                                            <p>사용자 총점</p>
+                                            <div id="klover_review_star_box">
+                                                <div id="klover_review_star">
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                </div>
+                                                <div id="klover_review_grade">
+                                                    <span id="klover_avg_grade">10</span>
+                                                    <span>/</span>
+                                                    <span id="klover_total_grade">10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="klover_review_box_bottom">
+                                            <div class="klover_number_box">
+                                                <div class="klover_rating_box">
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                </div>
+                                                <div class="klover_score_bar_box">
+                                                    <span class="klover_score_bar" id="klover_score_best"></span>
+                                                </div>
+                                                <div class="klover_percent_box">
+                                                    <span class="klover_percent">100%</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_number_box">
+                                                <div class="klover_rating_box">
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                </div>
+                                                <div class="klover_score_bar_box">
+                                                    <span class="klover_score_bar"></span>
+                                                </div>
+                                                <div class="klover_percent_box">
+                                                    <span class="klover_percent">0%</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_number_box">
+                                                <div class="klover_rating_box">
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                </div>
+                                                <div class="klover_score_bar_box">
+                                                    <span class="klover_score_bar"></span>
+                                                </div>
+                                                <div class="klover_percent_box">
+                                                    <span class="klover_percent">0%</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_number_box">
+                                                <div class="klover_rating_box">
+                                                    <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                    <span class="star"><img src="img/sub/kloverreview/klover.png" alt="평점수"></span>
+                                                </div>
+                                                <div class="klover_score_bar_box">
+                                                    <span class="klover_score_bar"></span>
+                                                </div>
+                                                <div class="klover_percent_box">
+                                                    <span class="klover_percent">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klover_review_box_right">
+                                        <div class="klover_review_box_top">
+                                            <p>58%의 구매자가</p>
+                                            <div id="klover_review_coment_box">
+                                                <img src="img/sub/booksale/icon6.png" alt="코멘트">
+                                                <span>도움돼요</span>
+                                                <p>라고 응답했어요</p>
+                                            </div>
+                                        </div>
+                                        <div class="klover_review_box_bottom">
+                                            <div class="klover_keyword_wrap">
+                                                <div class="keyword_rating_box">
+                                                    <span class="keyword_percent">0%</span>
+                                                </div>
+                                                <div class="klover_keyword_bar_box">
+                                                    <span class="klover_keyword_bar"></span>
+                                                </div>
+                                                <div class="klover_keyword_box">
+                                                    <span class="klover_keyword">집중돼요</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_keyword_wrap">
+                                                <div class="keyword_rating_box">
+                                                    <span class="keyword_percent" id="keyword_percent_first">58%</span>
+                                                </div>
+                                                <div class="klover_keyword_bar_box">
+                                                    <span class="klover_keyword_bar" id="klover_keyword_bar_first"></span>
+                                                </div>
+                                                <div class="klover_keyword_box">
+                                                    <span class="klover_keyword" id="klover_keyword_first">도움돼요</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_keyword_wrap">
+                                                <div class="keyword_rating_box">
+                                                    <span class="keyword_percent">0%</span>
+                                                </div>
+                                                <div class="klover_keyword_bar_box">
+                                                    <span class="klover_keyword_bar"></span>
+                                                </div>
+                                                <div class="klover_keyword_box">
+                                                    <span class="klover_keyword">쉬웠어요</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_keyword_wrap">
+                                                <div class="keyword_rating_box">
+                                                    <span class="keyword_percent">0%</span>
+                                                </div>
+                                                <div class="klover_keyword_bar_box">
+                                                    <span class="klover_keyword_bar"></span>
+                                                </div>
+                                                <div class="klover_keyword_box">
+                                                    <span class="klover_keyword">최고예요</span>
+                                                </div>
+                                            </div>
+                                            <div class="klover_keyword_wrap">
+                                                <div class="keyword_rating_box">
+                                                    <span class="keyword_percent">42%</span>
+                                                </div>
+                                                <div class="klover_keyword_bar_box">
+                                                    <span class="klover_keyword_bar" id="klover_keyword_bar_second"></span>
+                                                </div>
+                                                <div class="klover_keyword_box">
+                                                    <span class="klover_keyword">추천해요</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--klover 고객 상세리뷰-->
+                                <div id="klover_user_review_wrap">
+                                    <div id="klover_user_review_nav">
+                                        <ul id="user_review_nav_box">
+                                            <li class="user_review_nav_list" id="user_review_total">전체 리뷰</li>
+                                            <li class="user_review_nav_list" id="user_review_buyer">구매 리뷰</li>
+                                        </ul>
+                                    </div>
+                                    <!--첫번째 리뷰-->
+                                    <div class="klover_user_review_box">
+                                        <div class="user_comment_box">
+                                            <div class="user_comment_header">
+                                                <div class="user_info">
+                                                    <span class="user_sale_info">
+                                                        <span class="user_book_type">종이책</span>
+                                                        <span class="user_book_real">구매자</span>
+                                                    </span>
+                                                    <span class="user_id">hy*****</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_write_date">2023.09.30</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_dele">
+                                                        <button>신고/차단</button>
+                                                    </span>
+                                                </div>
+                                                <div class="user_star_box">
+                                                    <div class="user_rating_box">
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    </div>
+                                                    <span>/</span>
+                                                    <div class="user_keyword_box">
+                                                        <img src="img/sub/booksale/icon6.png" alt="코멘트">
+                                                        <span>도움돼요</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user_comment_content" id="user_comment_content1">
+                                                <div class="user_comment_inner" id="user_comment_inner1">
+                                                    <p class="user_comment_text">
+                                                        <가질 수 있고 될 수 있고 할 수 있다>는 용기와 자신감을 일깨워주는 자기계발서이자 회고록이다. 저자는 그가 겪었던 고난과 승리 이야기를 바탕으로 깊은 통찰을 들려준다. 이 책을 쓴 사람은 여러 글로벌 기업에서 모셔가며 강연을 부탁하는 에릭 토머스로 현재 그는 밥 프록터, 스티븐 코비, 웨인 다이어, 브라이언 트레이시의 뒤를 잇는 명강사로 높은 평가를 받고 있다.
+                                                        <br><br>
+                                                        책을 통해 그는 인생에서 많은 장애물과 실수가 있었다는 것을 밝힌다. 그에게는 가난, 얽히고설킨 가계도, 부모의 이혼과 재혼, 노숙, 인종차별, 아내의 생사고비 등 일반 사람들은 이겨낼 수 없는 힘든 시간들이 즐비했다. 그러나 그는 고군분투 끝에 어려운 처지를 벗어날  수 있었고 성공을 이루는 것도, 방해하는 것도 결국 자기 자신에 달려있었다는 것을 깨닫는다.
+                                                        <br><br>
+                                                        책에는 스토리뿐만 아니라 그가 정리한 열 가지 기적의 원칙도 나와있는데, 이를 마음에 새기고 단련하는 과정 속에서 스스로의 슈퍼파워를 찾는다면 독자들 또한 장애물을 뛰어넘고 원하는 것을 쟁취할 수 있을 것이다. 현재 목적과 방향을 잃고 지쳐있는 이들에게 일독을 권한다.
+                                                    </p>
+                                                </div>
+                                                <div class="overflow_content">
+                                                    <button class="overflow_btn">
+                                                        <span class="overflow_text" id="klover_text1">펼치기</span>
+                                                        <span class="overflow_img">
+                                                            <img src="img/sub/person/icon2.png" id="klover_down1">
+                                                            <img src="img/sub/person/icon2.png" class='person_up' id="klover_up1">
+                                                        </span>
+                                                    </button>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--두번째 리뷰-->
+                                    <div class="klover_user_review_box">
+                                        <div class="user_comment_box">
+                                            <div class="user_comment_header">
+                                                <div class="user_info">
+                                                    <span class="user_sale_info">
+                                                        <span class="user_book_type">종이책</span>
+                                                        
+                                                    </span>
+                                                    <span class="user_id">dj*****</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_write_date">2023.09.13</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_dele">
+                                                        <button>신고/차단</button>
+                                                    </span>
+                                                </div>
+                                                <div class="user_star_box">
+                                                    <div class="user_rating_box">
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    </div>
+                                                    <span>/</span>
+                                                    <div class="user_keyword_box">
+                                                        <img src="img/sub/booksale/icon6.png" alt="코멘트">
+                                                        <span>추천해요</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user_comment_content" id="user_comment_content2">
+                                                <div class="user_comment_inner" id="user_comment_inner2">
+                                                    <p class="user_comment_text">
+                                                        누구나 바라는 삶의 행복과 성공의 가치, 하지만 현실의 삶에서 해야 하는 일도 많고 생각보다 안되는 영역이라 많은 분들이 더 나은 방식과 전략에 대해 배우고자 할 것이다. 이에 책에서도 현실에서 활용 가능한 그리고 배움의 가치를 어떻게 자신을 위한 경험적 내공으로 승화하며 원만한 삶의 설계를 이룰 수 있는지를 전하며 기존의 방식에서 변해야 하는 부분과 새롭게 배울 경우에는 어떤 형태의 철저한 노력이나 자기관리법 등이 필요한지, 이에 대해서 자세히 전하고 있다.
+                                                        <br><br>
+                                                        <가질 수 있고 될 수 있고 할 수 있다> 책의 제목처럼 이 책은 어떤 가치를 조언하고 있는지를 직관적으로 마주할 수 있는 책이다. 개인마다 살아가는 방식이나 주관, 철학적 요소는 달라도 구체적인 방향성이나 공통적으로 중요시 하는 부분이 무엇인지, 이에 대한 일정한 학습이나 공감대 형성은 가능할 것이다. 물론 보는 관점에 따라서 원론적인 조언 등으로 평가할 수 있지만 우리가 생각은 했으나 행동하지 못했던 부분이나 비슷한 고민이나 걱정 등을 어떻게 극복하며 나를 위한 삶을 영위할 것인지, 이에 대해 돌아보게 한다는 점에서도 책이 갖는 의미가 괜찮게 다가올 것이다. 
+                                                        <br><br>
+                                                        또한 다양한 사례와 예시를 통해 삶에 대해 구체화 하고 있다는 점과 감정이나 마음 등의 내면적 요인에 대해서도 배울 점이 명확하다는 점에서도 가벼운 마음으로 읽으며 스스로의 삶에 대한 성찰과 점검의 시간도 가능할 것이다. <가질 수 있도 될 수 있고 할 수 있다> 때로는 어렵고 복잡해 보이는 문제나 현상에 대해, 간결하게 생각하거나 지금 할 수 있는 부분과 작은 습관이라고 하더라도 변화를 통해 행동해 나가는 과정을 통해 깨닫거나 어떤 형태의 성장과 성공의 전략 등이 존재하는지를 체감하기 마련이다.
+                                                        <br><br>
+                                                        책의 저자도 이런 가치에 대해 표현하며 개인이 할 수 있는 단위에서의 변화와 성장 지향적인 자세, 그리고 다양한 인간관계에 대해서도 어떻게 대처하며 스스로의 삶의 질과 만족도 등을 높일 것인지도 자세히 전하고 있어서 기본적인 자기계발 및 관리법 외에도 현실에서 중요하고 필요한 영역에 대해서도 배우거나 공감해 볼 수 있을 것이다. <가질 수 있고 될 수 있고 할 수 있다> 거창하고 진부한 계획보다는 당장 내가 할 수 있는 영역과 구체적인 자기계발 및 관리법이 무엇인지, 책을 통해 접하며 스스로를 위한 방안으로 활용해 보자.
+                                                    </p>
+                                                </div>
+                                                <div class="overflow_content">
+                                                    <button class="overflow_btn">
+                                                        <span class="overflow_text" id="klover_text2">펼치기</span>
+                                                        <span class="overflow_img">
+                                                            <img src="img/sub/person/icon2.png" id="klover_down2">
+                                                            <img src="img/sub/person/icon2.png" class='person_up' id="klover_up2">
+                                                        </span>
+                                                    </button>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--세번째 리뷰-->
+                                    <div class="klover_user_review_box">
+                                        <div class="user_comment_box">
+                                            <div class="user_comment_header">
+                                                <div class="user_info">
+                                                    <span class="user_sale_info">
+                                                        <span class="user_book_type">종이책</span>
+                                                        
+                                                    </span>
+                                                    <span class="user_id">co*****</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_write_date">2023.09.13</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_dele">
+                                                        <button>신고/차단</button>
+                                                    </span>
+                                                </div>
+                                                <div class="user_star_box">
+                                                    <div class="user_rating_box">
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    </div>
+                                                    <span>/</span>
+                                                    <div class="user_keyword_box">
+                                                        <img src="img/sub/booksale/icon6.png" alt="코멘트">
+                                                        <span>추천해요</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user_comment_content" id="user_comment_content3">
+                                                <div class="user_comment_inner" id="user_comment_inner3">
+                                                    <p class="user_comment_text">
+                                                        에릭 토머스가 스포츠 업계에서 가장 선호하는 자기개발 강연자여서인지 이 책은 NBA 스타들의 추천사로 시작한다.
+                                                        <br><br>
+                                                        직설적인 화법과 열정적인 제스처, 정열을 담은 에릭 토머스의 연설은 동기 부여 영상 레전드로 손꼽히는데 제목만 봐도 용기가 생기고 나아갈 의지가 생긴다.
+                                                        <br><br> 
+                                                        원하는 삶을 살기 위해 지금, 현재에 충실하라는 메시지를 담은 책은 오로지 독자를 위한 책이라고 말한다. 꿈과 목표를 가진 사람들을 위해 쓰여진 책이다.
+                                                        <br><br> 
+                                                        이 책은 성인뿐만 아니라 아이들이 읽어봐도 좋을 책이다. 과거의 자신처럼 힘든 시기를 지나고 있는 아이들에게 전하는 아이들에게 그의 삶을 공유하며 전하는 열정과 집념은 충분히 설득력이 있다.
+                                                        <br><br>
+                                                        ​저자는 가난, 부모의 이혼, 인종차별, 아내의 생사고비 등 숱한 삶의 고비를 계속 겪으면서도 피해의식에 빠지거나 좌절하지 않고 자신의 재능을 갈고닦으며, 마침내 포춘 500대 기업의 CEO, NBA와 MLB 스타들이 가장 신뢰하는 자기계발 구루이자 최고의 연설가로 자리매김한다.
+                                                        <br><br>
+                                                        무엇보다 인상 깊었던 건 '피해의식은 마음가짐'이라는 말이다. 자신의 통제권을 다른 사람이나 사물에 양도할 때 피해의식이 생겨난다고 하며 결국 피해자가 되는 쪽을 선택한 것은 나라고 말하는 내용이 와닿았다. 힘들고 좌절할 만한 상황에서 이를 딛고 일어서든지, 정체되는지는 결국 본인의 선택에 달린 것이다.
+                                                        <br><br>
+                                                        많은 사람이 알고 있지만 무언가 시작하고 도전하는 일은 쉽지 않다. 자신도 그러했다고 말하는 저자에게 위로를 얻을 수 있지만, 중요한 건 '기준을 세우고, 끊임없이 행동하고 변명하지 말라.'라는 거다.
+                                                        <br><br>
+                                                        목표를 달성하기 위한 방법과 방향을 직설적이고 열정적으로 말하는 이 책은 무기력증에 빠지거나, 갑작스러운 좌절로 다시 일어설 용기와 의지가 필요하다면 이 책이 좋은 길잡이가 돼줄 것이다.
+                                                    </p>
+                                                </div>
+                                                <div class="overflow_content">
+                                                    <button class="overflow_btn" id="overflow_btn5">
+                                                        <span class="overflow_text" id="klover_text3">펼치기</span>
+                                                        <span class="overflow_img">
+                                                            <img src="img/sub/person/icon2.png" id="klover_down3">
+                                                            <img src="img/sub/person/icon2.png" class='person_up' id="klover_up3">
+                                                        </span>
+                                                    </button>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--네번째 리뷰-->
+                                    <div class="klover_user_review_box">
+                                        <div class="user_comment_box">
+                                            <div class="user_comment_header">
+                                                <div class="user_info">
+                                                    <span class="user_sale_info">
+                                                        <span class="user_book_type">종이책</span>
+                                                        <span class="user_book_real">구매자</span>
+                                                    </span>
+                                                    <span class="user_id">sj****</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_write_date">2023.09.10</span>
+                                                    <span class="user_wall">|</span>
+                                                    <span class="user_dele">
+                                                        <button>신고/차단</button>
+                                                    </span>
+                                                </div>
+                                                <div class="user_star_box">
+                                                    <div class="user_rating_box">
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                        <span class="star"><img src="img/sub/booksale/clover.png" alt="평점수"></span>
+                                                    </div>
+                                                    <span>/</span>
+                                                    <div class="user_keyword_box">
+                                                        <img src="img/sub/booksale/icon6.png" alt="코멘트">
+                                                        <span>도움돼요</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user_comment_content" id="user_comment_content4">
+                                                <div class="user_comment_inner" id="user_comment_inner4">
+                                                    <p class="user_comment_text">
+                                                        오늘 간단히 소개하고자 하는 책은 바로 처세술 관련 서적이다. 책 제목부터 보자. “가질 수 있고 될 수 있고 할 수 있다” 이다. 책 제목만 보면 낭만적이요 긍정적인 것처럼 보이지만 필자로서는 결코 쉬워보이지 않는 내용이다. 그런데 이 책은 출간 이후 많은 매스컴과 인터넷 쇼핑몰에서 주목할 정도로 대단한 책이었다. 「뉴욕타임스」 와 미국 아마존에서 베스트셀러에 오른 화제의 책이다.
+                                                        <br><br>
+                                                        이 책의 저자인 에릭 토마스에 대해서 간단히 살펴보자면 밥 프록터 등의 뒤를 잇는 최고의 동기부여 강사로 평가받는 인물이다. 사실 그의 명성은 한 대학교의 작은 강의실에서 예상치 못하게 시작되었다. 아무런 기대 없이 청강하던 학생들은 마치 힙합 콘서트에서 래퍼의 공연을 보는 듯한 그의 열정적인 연설에 매료되었고 실시간으로 강연 영상을 인터넷에 올렸다. 이 영상은 누적 조회수 1억 7천만 뷰를 기록하며 미국 국경을 넘어 세계로 뻗어나갔고 유명세를 타게 됐다.
+                                                        <br><br>
+                                                        도서 소개를 마치면서
+                                                        <br><br>
+                                                        저자는 수없는 인종 차별을 겪으며 노숙자로 살아갔다. 하지만 끊임없이 애썼고, 자신이 가장 잘할 수 있는 것, 누군가에게 가치 있는 존재가 되기 위해 필요한 것들을 절실하게 탐구했다. 그 결과, 청년들의 멘토이자 세계적인 기업의 CEO와 미국 스포츠 슈퍼스타들이 가장 먼저 찾는 최고의 강연자가 될 수 있었던 것이다.
+                                                        <br><br>
+                                                        이런 에릭 토마스의 인생 스토리는 필자에게도 시사하는 바가 크다고 생각한다. 필자는 맨날 미루는 것에 익숙해 있었다. 그런데 최근 잇단 서평단등의 영향으로 처세술과 말투에 대한 책을 한권, 두권 얻으면서 천착하기 시작했다. 이 책에서 가장 크게 느낀 것을 한마디로 정의하면 이렇다. “원하는 것을 얻기 위해 숨 쉬는 것만큼 간절하게 원한 적이 있는가?” 필자는 여기에 대해서 0점을 주고 싶다.
+                                                    </p>
+                                                </div>
+                                                <div class="overflow_content">
+                                                    <button class="overflow_btn" id="overflow_btn5">
+                                                        <span class="overflow_text" id="klover_text4">펼치기</span>
+                                                        <span class="overflow_img">
+                                                            <img src="img/sub/person/icon2.png" id="klover_down4">
+                                                            <img src="img/sub/person/icon2.png" class='person_up' id="klover_up4">
+                                                        </span>
+                                                    </button>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--광고배너-->
+                            <div id="book_detail_banner">
+                                <a href="index.html" target="_self"><img src="img/sub/banner/img1.jpg" alt="광고배너"></a>
+                            </div>
+                            <!--교환반품 규정-->
+                            <div id="book_detail_refund">
+                                <div id="book_refund_title_wrap">
+                                    <h4 id="book_refund_title">교환/반품/품절 안내</h4>
+                                    <div id="refund_btn_box">
+                                        <button id="refund_btn">반품/교환 신청</button>
+                                        <button id="qna_btn"><img src="img/sub/refund/qnaicon1.png" alt="문의">1:1문의</button>
+                                    </div>
+                                </div>
+                                <div id="refund_content_wrap">
+                                    <ul id="refund_content_list">
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">반품/교환방법</p>
+                                            <p class="refund_content_text">
+                                                마이룸 > 주문관리 > 주문/배송내역 > 주문조회 > 반품/교환 신청, [1:1  상담 > 반품/교환/환불] 또는 고객센터 (1544-1900)
+                                                <br>
+                                                * 오픈마켓, 해외배송 주문, 기프트 주문시 [1:1 상담>반품/교환/환불] 또는 고객센터 (1544-1900)
+                                            </p>
+                                        </li>
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">반품/교환가능 기간</p>
+                                            <p class="refund_content_text">
+                                                변심반품의 경우 수령 후 7일 이내,
+                                                <br>
+                                                상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내
+                                            </p>
+                                        </li>
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">반품/교환비용</p>
+                                            <p class="refund_content_text">
+                                                변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담
+                                            </p>
+                                        </li>
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">반품/교환 불가 사유</p>
+                                            <p class="refund_content_text">
+                                                1) 소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우
+                                                <br>
+                                                (단지 확인을 위한 포장 훼손은 제외)
+                                                <br>
+                                                2) 소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우
+                                                <br>
+                                                예) 화장품, 식품, 가전제품(악세서리 포함) 등
+                                                <br>
+                                                3) 복제가 가능한 상품 등의 포장을 훼손한 경우
+                                                <br>
+                                                예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집
+                                                <br>
+                                                4) 소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우 ((1)해외주문도서)
+                                                <br>
+                                                5) 디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우
+                                                <br>
+                                                6) 시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우
+                                                <br>
+                                                7) 전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우
+                                                <br>
+                                                8) 세트상품 일부만 반품 불가 (필요시 세트상품 반품 후 낱권 재구매)
+                                            </p>
+                                        </li>
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">상품 품절</p>
+                                            <p class="refund_content_text">
+                                                공급사(출판사) 재고 사정에 의해 품절/지연될 수 있으며, 품절 시 관련 사항에 대해서는 이메일과 문자로 안내드리겠습니다.
+                                            </p>
+                                        </li>
+                                        <li class="refund_content_item">
+                                            <p class="refund_content_title">소비자 피해보상 환불 지연에 따른 배상</p>
+                                            <p class="refund_content_text">
+                                                1) 상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁 해결 기준 (공정거래위원회 고시)에 준하여 처리됨
+                                                <br>
+                                                2) 대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div id="refund_info_box">
+                                        <p>상품 설명에 반품/교환 관련한 안내가 있는 경우 그 내용을 우선으로 합니다.(업체 사정에 따라 달라질 수 있습니다.)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--상세 정보 페이지 오른쪽 디테일 정보(연관상품 및 광고)-->
+                        <div id="book_body_detail_right">
+                            <div id="book_body_ad_wrap">
+                                <!--기분 좋은 발견 시작-->
+                                <div id="book_ad_find">
+                                    <div class="book_detail_title_wrap">
+                                        <h4 class="book_detail_title">기분 좋은 발견</h4>
+                                        <div class="book_more">
+                                            <a href="index.html" target="_self">
+                                            <span>더보기</span>
+                                            <img src="img/sub/ad/icon1.png" alt="더보기">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="book_detail_content_wrap">
+                                        <div id="book_ad_scroll_wrap">
+                                            <div id="book_ad_content">
+                                                <ul id="book_ad_box">
+                                                    <li class="book_ad_scroll_item"><a href="index.html" target="_self"><img src="img/sub/ad/img1.jpg" alt="광고배너"></a></li>
+                                                    <li class="book_ad_scroll_item"><a href="index.html" target="_self"><img src="img/sub/ad/img2.jpg" alt="광고배너"></a></li>
+                                                    <li class="book_ad_scroll_item"><a href="index.html" target="_self"><img src="img/sub/ad/img3.png" alt="광고배너"></a></li>
+                                                    <li class="book_ad_scroll_item"><a href="index.html" target="_self"><img src="img/sub/ad/img4.jpg" alt="광고배너"></a></li>
+                                                    <li class="book_ad_scroll_item"><a href="index.html" target="_self"><img src="img/sub/ad/img5.jpg" alt="광고배너"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="book_ad_scroll_box">
+                                                <div id="book_ad_scroll_bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--이 분야의 베스트 시작-->
+                                <div id="book_area_best">
+                                    <div class="book_detail_title_wrap">
+                                        <h4 class="book_detail_title">이 분야의 베스트</h4>
+                                        <div class="book_more">
+                                            <a href="index.html" target="_self">
+                                            <span>더보기</span>
+                                            <img src="img/sub/ad/icon1.png" alt="더보기">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="book_detail_content_wrap">
+                                        <ul id="book_area_best_box">
+                                            <li class="book_area_best_content">
+                                                <div class="book_area_best_imgbox"></div>
+                                                <div class="book_area_best_infobox">
+                                                    <span class="book_area_best_rank" id="book_area_first_rank">1</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_best_content">
+                                                <div class="book_area_best_imgbox"></div>
+                                                <div class="book_area_best_infobox">
+                                                    <span class="book_area_best_rank">2</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_best_content">
+                                                <div class="book_area_best_imgbox"></div>
+                                                <div class="book_area_best_infobox">
+                                                    <span class="book_area_best_rank">3</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_best_content">
+                                                <div class="book_area_best_imgbox"></div>
+                                                <div class="book_area_best_infobox">
+                                                    <span class="book_area_best_rank">4</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_best_content">
+                                                <div class="book_area_best_imgbox"></div>
+                                                <div class="book_area_best_infobox">
+                                                    <span class="book_area_best_rank">5</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--중간 배너-->
+                                <div class="book_ad_banner">
+                                    <div class="book_ad_banner_imgbox">
+                                        <a href="index.html" target="_self"><img src="img/sub/banner/banner1.png" alt="광고이미지"></a>
+                                    </div>
+                                </div>
+                                <!--이 분야의 신간 시작-->
+                                <div id="book_area_new">
+                                    <div class="book_detail_title_wrap">
+                                        <h4 class="book_detail_title">이 분야의 신간</h4>
+                                        <div class="book_more">
+                                            <a href="index.html" target="_self">
+                                            <span>더보기</span>
+                                            <img src="img/sub/ad/icon1.png" alt="더보기">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="book_detail_content_wrap">
+                                        <ul id="book_area_new_box">
+                                            <li class="book_area_new_content">
+                                                <div class="book_area_new_imgbox"></div>
+                                                <div class="book_area_new_infobox">
+                                                    <span class="book_area_new_rank" id="book_area_first_rank">1</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_new_content">
+                                                <div class="book_area_new_imgbox"></div>
+                                                <div class="book_area_new_infobox">
+                                                    <span class="book_area_new_rank">2</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_new_content">
+                                                <div class="book_area_new_imgbox"></div>
+                                                <div class="book_area_new_infobox">
+                                                    <span class="book_area_new_rank">3</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_new_content">
+                                                <div class="book_area_new_imgbox"></div>
+                                                <div class="book_area_new_infobox">
+                                                    <span class="book_area_new_rank">4</span>
+                                                </div>
+                                            </li>
+                                            <li class="book_area_new_content">
+                                                <div class="book_area_new_imgbox"></div>
+                                                <div class="book_area_new_infobox">
+                                                    <span class="book_area_new_rank">5</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--마지막 배너2개 연속-->
+                                <div class="book_ad_banner">
+                                    <div class="book_ad_banner_imgbox">
+                                        <a href="index.html" target="_self"><img src="img/sub/banner/banner2.png" alt="광고이미지"></a>
+                                    </div>
+                                </div>                                
+                                <div class="book_ad_banner">
+                                    <div class="book_ad_banner_imgbox">
+                                        <a href="index.html" target="_self"><img src="img/sub/banner/banner3.png" alt="광고이미지"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!------------footer시작------------>
+        <footer id="footer_upperwrap">
+            <div id="footer_notice_wrap">
+                <div id="footer_notice_inner">
+                    <div class="footer_notice">
+                        <h1 class="notice_title">공지사항</h1>
+                        <a href="index.html" target="_self">
+                            <p class="notice_text">북앤라이프 문화상품권 결제서비스 일시 중단 안내 (9/21~)</p>
+                        </a>
+                        <div class="notice_plus">
+                            <span class="notice_plus_text"><a href="index.html" target="_self">더보기</a></span>
+                            <span class="notice_plus_img"><a href="index.html" target="_self"><img src="img/main/todaypick/plus.png"
+                                        alt="더보기"></a></span>
+                        </div>
+                    </div>
+                    <span>|</span>
+                    <div class="footer_notice">
+                        <h1 class="notice_title">당첨자 발표</h1>
+                        <a href="index.html" target="_self">
+                            <p class="notice_text">[판타지]9월 이 달의 MD PICK!(제이플러스) 당첨자 발표</p>
+                        </a>
+                        <div class="notice_plus">
+                            <span class="notice_plus_text"><a href="index.html" target="_self">더보기</a></span>
+                            <span class="notice_plus_img"><a href="index.html" target="_self"><img src="img/main/todaypick/plus.png"
+                                        alt="더보기"></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_service_wrap">
+                <div id="footer_service_inner">
+                    <div class="service_box">
+                        <span class="service_title"><a href="index.html" target="_self">회원혜택</a></span>
+                        <ul class="service_list">
+                            <li class="service_item"><a href="index.html" target="_self">Prestige Lounge</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">신규회원 혜택</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">등급별 혜택</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">출석체크</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_box">
+                        <span class="service_title">쇼핑 TIP</span>
+                        <ul class="service_list">
+                            <li class="service_item"><a href="index.html" target="_self">제휴포인트/상품권</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">교보문고 기프트카드</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">대량구매</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">리딩트리서비스(독서경영)</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_box">
+                        <span class="service_title">빠른 서비스</span>
+                        <ul class="service_list">
+                            <li class="service_item"><a href="index.html" target="_self">북클럽카드 등록</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">영수증 후 적립</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">교보캐시 조회·충전</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">교보e캐시 조회·충전</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">기프트카드 조회·충전</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">협력사 여러분</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_box">
+                        <span class="service_title">교보문고 소식</span>
+                        <ul class="service_list">
+                            <li class="service_item"><a href="index.html" target="_self">인스타그램(교보문고)</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">인스타그램(인터넷교보문고)</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">페이스북(교보문고)</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">페이스북(인터넷교보문고)</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">트위터</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">유튜브</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_box">
+                        <span class="service_title"><a href="index.html" target="_self">FAQ</a></span>
+                        <ul class="service_list">
+                            <li class="service_item"><a href="index.html" target="_self">주문·결제</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">eBook</a></li>
+                            <li class="service_item"><a href="index.html" target="_self">도서·상품정보</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_address_wrap">
+                <div id="footer_address_inner">
+                    <div id="footer_logo_box">
+                        <div id="footer_logo_img">
+                            <a href="index.html" target="_self"><img src="img/common/footer/logo.png"></a>
+                        </div>
+                        <div id="footer_site_box">
+                            <div id="select_site">
+                                <div id="select_btn_box">
+                                    <button id="select_btn1">
+                                        <span>Family Site</span>
+                                    </button>
+                                    <button id="select_btn2">
+                                        <span>Family Site</span>
+                                    </button>
+                                </div>
+                                <ul id="family_option">
+                                    <li class="family_site"><a href="index.html" target="_self">교보생명</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보증권</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보정보통신</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보리얼코</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보악사자산운용</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보라이프플래닛생명</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">KCA 손해사정</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">KCA 서비스</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보자산신탁주식회사</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">대산문화재단</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보교육재단</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">대산농촌재단</a></li>
+                                    <li class="family_site"><a href="index.html" target="_self">교보아카데미</a></li>
+                                </ul>
+                            </div>
+                            <div id="social_site_wrap">
+                                <div class="social_site">
+                                    <a href="index.html" target="_self"><img src="img/common/footer/icon3.png"></a>
+                                </div>
+                                <div class="social_site">
+                                    <a href="index.html" target="_self"><img src="img/common/footer/icon4.png"></a>
+                                </div>
+                                <div class="social_site">
+                                    <a href="index.html" target="_self"><img src="img/common/footer/icon5.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer_under_wrap">
+                        <div id="footer_left_wrap">
+                            <div id="footer_nav_box">
+                                <ul id="footer_nav">
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">회사소개</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">이용약관</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">개인정보처리방침</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">청소년보호정책</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">대량주문안내</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">협력사여러분</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">채용정보</a></li>
+                                    <li class="footer_nav_list">|</li>
+                                    <li class="footer_nav_list"><a href="index.html" target="_self">광고소개</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="footer_info_wrap">
+                                <span class="footer_info">대표이사 : 안병현, 김상훈</span>
+                                <span class="footer_wall">|</span>
+                                <span class="footer_info">서울특별시 종로구 종로 1</span>
+                                <span class="footer_wall">|</span>
+                                <span class="footer_info">사업자등록번호 : 102-81-11670</span>
+                                <br>
+                                <span class="footer_info" id="footer_call">대표전화 : 1544-1900(발신자 부담전화)</span>
+                                <span class="footer_wall">|</span>
+                                <span class="footer_info">FAX : 0502-987-5711(지역번호 공통)</span>
+                                <span class="footer_wall">|</span>
+                                <span class="footer_info">서울특별시 통신판매업신고번호 : 제 653호</span>
+                                <button>사업자정보확인</button>
+                            </div>
+                            <div id="footer_company">
+                                <span>© KYOBO BOOK CENTRE</span>
+                            </div>
+                        </div>
+                        <div id="footer_right_wrap">
+                            <div id="footer_toss_box">
+                                <span>토스페이먼츠 구매안전서비스</span>
+                                <button>서비스 가입 확인</button>
+                                <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+                            </div>
+                            <div id="footer_mark_box">
+                                <div id="mark_logo">
+                                    <a href="index.html" target="_self">
+                                        <div id="mark_logo_img">
+                                            <img src="img/common/footer/logo2.png" alt="ISMS인증마크">
+                                        </div>
+                                        <div id="mark_logo_text">
+                                            <span>정보보호관리체계</span>
+                                            <br>
+                                            <span>ISMS 인증획득</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="mark_info">
+                                    <span>[인증범위]온라인 교보문고 서비스 운영</span>
+                                    <br>
+                                    <span>[유효기간]2020.11.04 ~ 2025.11.03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
