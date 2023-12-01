@@ -66,19 +66,19 @@ REFER TO 교보문고(Kyobobook) && 카카오openAPI <br><br>
 &nbsp;– transform속성 및 rotateY() 속성값을 통해 도서 이미지 마우스 hover/click 이벤트 적용 <br>
 &nbsp;– https://seonnieee.github.io/openAPI_booksite/js/js/sub/bookSale.js <br>
 • 숨김내용 보이기<br>
-$nbsp;– click시 마다, 숨김 내용 전체 show/hide 기능<br>
-$nbsp;– https://seonnieee.github.io/openAPI_booksite/js/js/sub/upDownButton.js<br>
+&nbsp;– click시 마다, 숨김 내용 전체 show/hide 기능<br>
+&nbsp;– https://seonnieee.github.io/openAPI_booksite/js/js/sub/upDownButton.js<br>
 
 ### [Kakao openAPI]–⭐추가 수정 작업⭐
 • Kakao openAPI 도서에 대한 REST키 발급받아 도서의 필요한 정보만 GET으로 요청하여 받아옴<br>
-• prepend, append를 사용하여 위치를 구성
-• 가격은 '정규표현식' 활용하여 천단위 지정
+• prepend, append를 사용하여 위치를 구성<br>
+• 가격은 '정규표현식' 활용하여 천단위 지정<br>
 
 ### [JSON && Ajax]–⭐추가 수정 작업⭐
 • 추후에 수정 작업이 편하도록 데이터 파일화하기!<br>
 (금번 프로젝트에서는 도서정보 외 일반 상품정보에 한함)  <br>
 &nbsp;– 실제 서버데이터는 없기 때문에 JSON구조 파일화  <br>
-&nbsp;– https://github.com/seonnieee/openAPI_booksite/tree/main/json
+&nbsp;– https://github.com/seonnieee/openAPI_booksite/tree/main/json <br>
 • ajax 기능을 이용해 JSON파일 데이터 화면에 구현하기 <br>
 &nbsp;– https://github.com/seonnieee/openAPI_booksite/tree/main/js/ajax <br><br>
 
